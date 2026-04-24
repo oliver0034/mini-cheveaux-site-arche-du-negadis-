@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileNav.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => mobileNav.classList.remove('open'));
     });
+    mobileNav.querySelectorAll('.mobile-acc-btn').forEach(btn => {
+      btn.addEventListener('click', () => btn.closest('.mobile-accordion').classList.toggle('open'));
+    });
   }
 
   /* ---- Active nav link ---- */
