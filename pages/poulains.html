@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scarlett — Pouliche Miniature AMHA à Vendre · L'Arche du Négadis</title>
+<meta name="description" content="Scarlett de l'Arche du Négadis : pouliche miniature américaine AMHA née en mars 2026, fille de Macchiato × Kadence. Allures pur-sang arabe, robe paysanne, ultra-sociable. Testée ACAN N/N par filiation.">
+<link rel="canonical" href="https://archednegadis.fr/pages/poulains.html">
+<meta property="og:title" content="Scarlett — Pouliche Miniature AMHA à Vendre · L'Arche du Négadis">
+<meta property="og:description" content="Scarlett : pouliche miniature AMHA née mars 2026, fille de Macchiato × Kadence. Testée ACAN N/N, allures pur-sang arabe. Disponible à l'Arche du Négadis, Paulhan, Hérault.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://archednegadis.fr/pages/poulains.html">
+<meta property="og:image" content="https://archednegadis.fr/assets/images/scarlett-studio-portrait.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Scarlett — Pouliche Miniature AMHA à Vendre · L'Arche du Négadis">
+<meta name="twitter:description" content="Pouliche miniature AMHA née mars 2026, testée ACAN N/N, allures pur-sang arabe. Disponible — Arche du Négadis, Paulhan, Hérault.">
+<meta name="twitter:image" content="https://archednegadis.fr/assets/images/scarlett-studio-portrait.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://archednegadis.fr/"},
+    {"@type":"ListItem","position":2,"name":"Nos Poulains","item":"https://archednegadis.fr/pages/poulains.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Scarlett — Pouliche Miniature Américaine AMHA",
+  "description": "Pouliche miniature américaine AMHA née en mars 2026. Fille de Macchiato × Kadence. Allures pur-sang arabe, robe paysanne. Testée ACAN N/N par filiation. Certifiée AMHA.",
+  "brand": {"@type":"Brand","name":"L'Arche du Négadis"},
+  "offers": {"@type":"Offer","availability":"https://schema.org/InStock","priceCurrency":"EUR","seller":{"@type":"Organization","name":"L'Arche du Négadis","url":"https://archednegadis.fr"}},
+  "image": "https://archednegadis.fr/assets/images/scarlett-studio-portrait.jpg",
+  "url": "https://archednegadis.fr/pages/poulains.html"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="../assets/styles.css">
+<style>
+  /* === Scarlett page — styles additionnels === */
+
+  /* Badge "disponible" bleu */
+  .badge-avail {
+    background: rgba(100,149,237,.13);
+    color: #7ba9f0;
+  }
+
+  /* Traits highlights */
+  .trait-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+    margin-top: 3.5rem;
+  }
+  .trait-card {
+    background: var(--surface-mid);
+    border-radius: var(--r-lg);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all var(--t);
+  }
+  .trait-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%; transform: translateX(-50%);
+    width: 55%; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+    opacity: 0; transition: opacity var(--t);
+  }
+  .trait-card:hover { background: var(--surface-high); transform: translateY(-4px); }
+  .trait-card:hover::before { opacity: 1; }
+  .trait-icon {
+    width: 56px; height: 56px;
+    background: var(--gold-pale); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.5rem;
+  }
+  .trait-card h3 { font-size: 1.15rem; margin-bottom: .75rem; }
+  .trait-card p { font-size: .88rem; color: var(--text-secondary); line-height: 1.75; }
+
+  /* Photo galerie captionnée */
+  .gallery-captioned {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.75rem;
+    margin-top: 3.5rem;
+  }
+  .gallery-cap-item { grid-column: span 2; }
+  .gallery-cap-item:nth-child(4) { grid-column: 1 / span 3; }
+  .gallery-cap-item:nth-child(5) { grid-column: 4 / span 3; }
+  .gallery-cap-item { border-radius: var(--r-lg); overflow: hidden; background: var(--surface-mid); }
+  .gallery-cap-img {
+    width: 100%; height: 320px; object-fit: contain;
+    background: #1c1a16;
+    filter: sepia(5%) brightness(.88);
+    transition: all var(--ts);
+    display: block;
+  }
+  .gallery-cap-item:hover .gallery-cap-img {
+    transform: scale(1.04);
+    filter: sepia(0%) brightness(1);
+  }
+  .gallery-cap-body { padding: 1.5rem; }
+  .gallery-cap-label {
+    font-size: .65rem; letter-spacing: .2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: .5rem; display: block;
+  }
+  .gallery-cap-body p { font-size: .88rem; color: var(--text-secondary); line-height: 1.7; }
+
+  /* Fiche : highlight ACAN */
+  .data-val .highlight {
+    display: inline-flex; align-items: center; gap: .35rem;
+    color: #7fcf8e; font-size: .85em;
+  }
+
+  /* CTA secondaire poulains */
+  .future-foals {
+    background: var(--surface-mid);
+    border-radius: var(--r-lg);
+    padding: 3rem;
+    display: flex; align-items: center; gap: 2.5rem;
+    border: 1px solid var(--outline-variant);
+    margin-top: 4rem;
+  }
+  .future-foals-icon {
+    width: 64px; height: 64px; flex-shrink: 0;
+    background: var(--gold-pale); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.6rem;
+  }
+  .future-foals-text h3 { font-size: 1.2rem; margin-bottom: .5rem; }
+  .future-foals-text p { font-size: .88rem; color: var(--text-secondary); }
+
+  /* Parents */
+  .parent-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .parent-card {
+    background: var(--surface-mid);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all var(--t);
+  }
+  .parent-card:hover { transform: translateY(-4px); }
+  .parent-img-wrap {
+    overflow: hidden;
+    height: 280px;
+    background: #1c1a16;
+  }
+  .parent-img-wrap img {
+    width: 100%; height: 100%; object-fit: contain;
+    filter: sepia(5%) brightness(.88);
+    transition: transform var(--ts);
+  }
+  .parent-card:hover .parent-img-wrap img { transform: scale(1.04); filter: sepia(0%) brightness(1); }
+  .parent-body { padding: 1.5rem; }
+
+  @media(max-width: 1060px) {
+    .gallery-captioned { grid-template-columns: repeat(2, 1fr); }
+    .gallery-cap-item { grid-column: span 1 !important; }
+  }
+  @media(max-width: 768px) {
+    .trait-grid { grid-template-columns: 1fr; }
+    .gallery-captioned { grid-template-columns: 1fr; }
+    .gallery-cap-item { grid-column: span 1 !important; }
+    .parent-grid { grid-template-columns: 1fr; }
+    .future-foals { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <a href="../index.html" class="nav-brand"><img src="../assets/images/logo.png" alt="Logo L'Arche du Négadis" class="nav-logo"><div class="nav-brand-text"><span class="nav-brand-name">L'Arche du Négadis</span><span class="nav-brand-tag">Élevage d'Excellence · Hérault</span></div></a>
+  <ul class="nav-links">
+    <li><a href="../index.html" class="nav-link">Accueil</a></li>
+    <li><a href="a-propos.html" class="nav-link">À Propos</a></li>
+    <li class="nav-drop"><button class="nav-drop-btn">Nos Miniatures <span class="drop-arrow">▾</span></button><ul class="drop-menu"><li><a href="etalons-miniatures.html" class="drop-item">Notre Étalon</a></li><li><a href="juments-miniatures.html" class="drop-item">Nos Juments</a></li><li><a href="poulains.html" class="drop-item active">Nos Poulains</a></li></ul></li>
+    <li class="nav-drop"><button class="nav-drop-btn" aria-haspopup="true" aria-expanded="false">La Race <span class="drop-arrow">▾</span></button><ul class="drop-menu" role="list"><li><a href="origine-mini-chevaux.html" class="drop-item">Origine &amp; Histoire</a></li><li><a href="definition-cheval-miniature.html" class="drop-item">Définition</a></li><li><a href="amha-vs-amhr.html" class="drop-item">AMHA vs AMHR</a></li><li><a href="mesurer-cheval-miniature.html" class="drop-item">Comment Mesurer</a></li><li><a href="nutrition-paturage.html" class="drop-item">Nutrition &amp; Pâturage</a></li><li><a href="genetique-acan.html" class="drop-item">Génétique &amp; ACAN</a></li><li><a href="reglementation-france.html" class="drop-item">Réglementation France</a></li></ul></li>
+    <li><a href="pension.html" class="nav-link">Pension</a></li>
+    <li><a href="gites.html" class="nav-link">Gîtes</a></li>
+    <li><a href="https://braque-de-weimar-herault.fr/" class="nav-link nav-link-ext" target="_blank" rel="noopener noreferrer">Braque de Weimar <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.6rem"></i></a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+  <button class="nav-burger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav"><button class="mobile-close"><i class="fa-solid fa-xmark"></i></button><a href="../index.html">Accueil</a><a href="a-propos.html">À Propos</a><a href="etalons-miniatures.html">Notre Étalon</a><a href="juments-miniatures.html">Nos Juments</a><a href="poulains.html">Nos Poulains</a><a href="origine-mini-chevaux.html">Origine de la Race</a><a href="definition-cheval-miniature.html">Définition</a><a href="amha-vs-amhr.html">AMHA vs AMHR</a><a href="mesurer-cheval-miniature.html">Comment Mesurer</a><a href="nutrition-paturage.html">Nutrition &amp; Pâturage</a><a href="genetique-acan.html">Génétique &amp; ACAN</a><a href="reglementation-france.html">Réglementation France</a><a href="pension.html">Pension</a><a href="gites.html">Gîtes</a><a href="https://braque-de-weimar-herault.fr/" target="_blank" rel="noopener noreferrer">Braque de Weimar ↗</a><a href="contact.html">Contact</a></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE HERO
+════════════════════════════════════════════════════════════ -->
+<section class="page-hero">
+  <div class="container page-hero-wrap">
+    <nav class="breadcrumb"><a href="../index.html">Accueil</a><span class="breadcrumb-sep">›</span><a href="etalons-miniatures.html">Nos Miniatures</a><span class="breadcrumb-sep">›</span><span>Nos Poulains</span></nav>
+    <span class="eyebrow">Naissance · Mars 2026 · AMHA &amp; AMHR</span>
+    <h1>Nos Poulains<br><em style="color:var(--gold)">Nés à l'Arche du Négadis</em></h1>
+    <div class="sep sep-left"></div>
+    <p style="max-width:620px;color:var(--text-secondary)">Chaque poulain vendu par l'Arche du Négadis est issu d'une sélection rigoureuse et livré avec son dossier complet : pedigree AMHA/AMHR, tests génétiques ACAN, identification SIRE et suivi vétérinaire. Découvrez notre première pouliche de la saison 2026.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 1 — SCARLETT : FICHE COMPLÈTE
+════════════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+
+    <div class="section-header" data-reveal>
+      <span class="eyebrow">Vedette de la saison 2026</span>
+      <h2>Scarlett de l'Arche du Négadis<br><em style="color:var(--gold)">Une Pouliche Miniature AMHA d'Exception</em></h2>
+      <div class="sep sep-left"></div>
+      <p style="max-width:660px;color:var(--text-secondary)">Issue du mariage entre notre étalon d'élite Macchiato et la jument Kadence, Scarlett incarne la synthèse parfaite entre robustesse élégante et raffinement de pur-sang arabe en réduction. Une naissance rare, pensée pour l'excellence.</p>
+    </div>
+
+    <!-- FICHE GRID : galerie sticky + détails -->
+    <div class="fiche-grid" style="margin-top:4.5rem">
+
+      <!-- Galerie sticky -->
+      <div class="fiche-sticky" data-reveal="left">
+        <div class="fiche-main-img">
+          <img src="../assets/images/scarlett-studio-trio.jpg" alt="Scarlett de l'Arche du Négadis — Pouliche miniature AMHA pie alezan, triptyque studio">
+        </div>
+        <div class="fiche-thumbs">
+          <div class="fiche-thumb active">
+            <img src="../assets/images/scarlett-studio-trio.jpg" alt="Scarlett — triptyque studio, trois angles">
+          </div>
+          <div class="fiche-thumb">
+            <img src="../assets/images/scarlett-studio-portrait.jpg" alt="Scarlett — portrait studio plein corps">
+          </div>
+          <div class="fiche-thumb">
+            <img src="../assets/images/scarlett-prairie.jpg" alt="Scarlett — en liberté dans la prairie">
+          </div>
+          <div class="fiche-thumb">
+            <img src="../assets/images/scarlett-ecurie-portrait.jpg" alt="Scarlett — gros plan portrait en écurie">
+          </div>
+        </div>
+      </div>
+
+      <!-- Détails / contenu -->
+      <div data-reveal="right">
+
+        <!-- Badges -->
+        <div style="display:flex;gap:.5rem;margin-bottom:1.5rem;flex-wrap:wrap">
+          <span class="badge">AMHA</span>
+          <span class="badge">AMHR</span>
+          <span class="badge badge-avail"><i class="fa-solid fa-circle" style="font-size:.45rem"></i> Disponible</span>
+        </div>
+
+        <!-- Nom -->
+        <h3 style="font-size:clamp(1.7rem,3vw,2.6rem);margin-bottom:.35rem;line-height:1.1">Scarlett</h3>
+        <p style="font-family:var(--font-serif);font-style:italic;font-size:1rem;color:var(--gold-muted);margin-bottom:.4rem">de l'Arche du Négadis</p>
+        <p style="font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:2rem">Pouliche · Née mars 2026 · Pie Alezan</p>
+
+        <!-- Accroche -->
+        <p style="color:var(--text-secondary);margin-bottom:1.2rem">Née d'un <strong style="color:var(--text-primary)">mariage de prestige</strong> entre Macchiato de l'Arche — notre étalon à l'allure de pur-sang arabe — et la jument Kadence de lignée paysanne, Scarlett est le fruit d'une sélection pensée pour l'excellence morphologique et comportementale.</p>
+        <p style="color:var(--text-secondary);margin-bottom:2rem">Dès ses premiers jours, elle se démarque par un <strong style="color:var(--text-primary)">port de tête altier</strong>, une queue fièrement relevée, et des allures d'une amplitude rare pour sa taille. Elle a également hérité du regard mystérieux de son père : de magnifiques <strong style="color:var(--text-primary)">éclats de bleu dans les yeux</strong>, une signature unique et inoubliable.</p>
+
+        <!-- Fiche technique -->
+        <div class="data-table">
+          <div class="data-row">
+            <span class="data-label">Nom Officiel</span>
+            <span class="data-val">Scarlett de l'Arche du Négadis</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Naissance</span>
+            <span class="data-val">Mars 2026</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Sexe</span>
+            <span class="data-val">Pouliche</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Registre</span>
+            <span class="data-val">Éligible AMHA &amp; AMHR</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Père</span>
+            <span class="data-val">Macchiato de l'Arche (Standard Élite)</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Mère</span>
+            <span class="data-val">Kadence (Lignée Paysanne)</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Robe</span>
+            <span class="data-val">Pie Alezan (Paysanne)</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Points Forts</span>
+            <span class="data-val">Allures Pur-Sang Arabe · Éclats bleus · Ultra-sociable</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Santé ACAN</span>
+            <span class="data-val"><span class="highlight" style="display:inline-flex;align-items:center;gap:.35rem;color:#7fcf8e"><i class="fa-solid fa-circle-check"></i> N/N — Saine par filiation</span></span>
+          </div>
+        </div>
+
+        <a href="contact.html" class="btn btn-gold" style="margin-top:1.75rem"><i class="fa-solid fa-envelope"></i> Nous contacter pour Scarlett</a>
+        <a href="contact.html" class="btn btn-outline" style="margin-top:1.75rem;margin-left:.75rem"><i class="fa-solid fa-calendar-days"></i> Visiter l'élevage</a>
+      </div>
+    </div>
+
+    <!-- Parents de Scarlett -->
+    <div style="margin-top:5rem" data-reveal>
+      <span class="eyebrow">Son héritage</span>
+      <h3 style="margin-bottom:2rem">Les Parents de Scarlett</h3>
+      <div class="parent-grid">
+
+        <div class="parent-card">
+          <div class="parent-img-wrap">
+            <img src="../assets/images/etalon-macchiato-2.png" alt="Macchiato de l'Arche du Négadis — Étalon miniature AMHA AMHR">
+          </div>
+          <div class="parent-body">
+            <span class="eyebrow" style="margin-bottom:.4rem">Père</span>
+            <h4 style="font-family:var(--font-serif);font-size:1.15rem;color:var(--text-headline);font-weight:400;margin-bottom:.5rem">Macchiato de l'Arche</h4>
+            <p style="font-size:.83rem;color:var(--text-secondary);margin-bottom:.9rem">Étalon d'élite · Standard AMHA/AMHR · Allures pur-sang arabe · Éclats bleus dans les yeux · ACAN N/N</p>
+            <a href="etalons-miniatures.html" class="btn-link" style="font-size:.72rem">Voir la fiche complète</a>
+          </div>
+        </div>
+
+        <div class="parent-card">
+          <div class="parent-img-wrap">
+            <img src="../assets/images/kadence-4.jpg" alt="Kadence — Jument miniature lignée paysanne pie alezan">
+          </div>
+          <div class="parent-body">
+            <span class="eyebrow" style="margin-bottom:.4rem">Mère</span>
+            <h4 style="font-family:var(--font-serif);font-size:1.15rem;color:var(--text-headline);font-weight:400;margin-bottom:.5rem">Kadence</h4>
+            <p style="font-size:.83rem;color:var(--text-secondary);margin-bottom:.9rem">Jument de caractère · Lignée Paysanne · Robe pie alezan · Excellent tempérament · ACAN N/N</p>
+            <a href="juments-miniatures.html" class="btn-link" style="font-size:.72rem">Voir la fiche complète</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 2 — TROIS ATOUTS SIGNATURE
+════════════════════════════════════════════════════════════ -->
+<section class="section bg-low">
+  <div class="container">
+
+    <div class="section-header" data-reveal>
+      <span class="eyebrow">Ses atouts</span>
+      <h2>Ce qui rend Scarlett<br><em style="color:var(--gold)">inoubliable</em></h2>
+      <div class="sep sep-left"></div>
+    </div>
+
+    <div class="trait-grid">
+
+      <div class="trait-card" data-reveal>
+        <div class="trait-icon"><i class="fa-solid fa-wind" style="color:var(--gold)"></i></div>
+        <h3>Allures Pur-Sang Arabe</h3>
+        <p>Scarlett ne marche pas, elle flotte. Héritière des allures spectaculaires de son père Macchiato, elle déploie au trot et au galop une amplitude exceptionnelle — port de tête altier, queue fièrement relevée, chaque mouvement un tableau vivant.</p>
+      </div>
+
+      <div class="trait-card" data-reveal>
+        <div class="trait-icon"><i class="fa-solid fa-eye" style="color:var(--gold)"></i></div>
+        <h3>Le Regard de Macchiato</h3>
+        <p>Petite particularité fascinante transmise par son père : Scarlett possède de magnifiques <strong style="color:var(--text-primary)">éclats de bleu dans les yeux</strong>. Cette signature unique, rare dans la race, confère à son regard une profondeur et une expressivité qui subjugue au premier coup d'œil.</p>
+      </div>
+
+      <div class="trait-card" data-reveal>
+        <div class="trait-icon"><i class="fa-solid fa-heart" style="color:var(--gold)"></i></div>
+        <h3>Un « Amour » de Pouliche</h3>
+        <p>Au-delà du physique, Scarlett se distingue par une <strong style="color:var(--text-primary)">sociabilité hors du commun</strong>. C'est une pouliche fusionnelle qui cherche constamment l'interaction humaine — elle vient à vous, réclame ses caresses, et son tempérament doux en fait une candidate parfaite pour la famille ou la médiation.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 3 — GALERIE PHOTOS CAPTIONNÉE
+════════════════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+
+    <div class="section-header" data-reveal>
+      <span class="eyebrow">Galerie</span>
+      <h2>Les Premiers Pas<br><em style="color:var(--gold)">de Scarlett</em></h2>
+      <div class="sep sep-left"></div>
+      <p style="max-width:560px;color:var(--text-secondary)">Chaque photo raconte un trait de caractère. Découvrez la pouliche sous tous ses angles, du regard expressif hérité de Macchiato à ses moments de connivence avec l'humain.</p>
+    </div>
+
+    <div class="gallery-captioned">
+
+      <div class="gallery-cap-item" data-reveal>
+        <div style="overflow:hidden">
+          <img class="gallery-cap-img" src="../assets/images/scarlett-studio-trio.jpg" alt="Scarlett — triptyque studio, trois angles pie alezan fond noir">
+        </div>
+        <div class="gallery-cap-body">
+          <span class="gallery-cap-label"><i class="fa-solid fa-camera" style="font-size:.7rem"></i> Triptyque Studio</span>
+          <p>Scarlett sous trois angles en studio : profil, face et gros plan. Un modèle déjà accompli à quelques semaines — allures altières, robe pie alezan de caractère.</p>
+        </div>
+      </div>
+
+      <div class="gallery-cap-item" data-reveal>
+        <div style="overflow:hidden">
+          <img class="gallery-cap-img" src="../assets/images/scarlett-studio-portrait.jpg" alt="Scarlett — portrait studio plein corps, pouliche miniature AMHA pie alezan">
+        </div>
+        <div class="gallery-cap-body">
+          <span class="gallery-cap-label"><i class="fa-solid fa-star" style="font-size:.7rem"></i> Portrait de Show</span>
+          <p>Portrait studio plein corps : la morphologie de Scarlett se révèle — ossature fine, boulet court, robe brillante. Une conformation qui annonce déjà une future championne.</p>
+        </div>
+      </div>
+
+      <div class="gallery-cap-item" data-reveal>
+        <div style="overflow:hidden">
+          <img class="gallery-cap-img" src="../assets/images/scarlett-prairie.jpg" alt="Scarlett en liberté dans la prairie — allures pur-sang arabe, queue relevée">
+        </div>
+        <div class="gallery-cap-body">
+          <span class="gallery-cap-label"><i class="fa-solid fa-wind" style="font-size:.7rem"></i> Allures en Liberté</span>
+          <p>En prairie, Scarlett révèle l'héritage de Macchiato : port de tête altier, queue fièrement relevée, amplitude de mouvement rare pour sa taille. Elle ne marche pas — elle flotte.</p>
+        </div>
+      </div>
+
+      <div class="gallery-cap-item" data-reveal>
+        <div style="overflow:hidden">
+          <img class="gallery-cap-img" src="../assets/images/scarlett-ecurie-portrait.jpg" alt="Scarlett — gros plan tête en écurie, éclats bleus dans le regard hérités de Macchiato">
+        </div>
+        <div class="gallery-cap-body">
+          <span class="gallery-cap-label"><i class="fa-solid fa-eye" style="font-size:.7rem"></i> Focus Regard</span>
+          <p>Gros plan sur le regard de Scarlett : on y devine les éclats de bleu transmis par son père Macchiato — une signature génétique unique dans la race, inoubliable au premier coup d'œil.</p>
+        </div>
+      </div>
+
+      <div class="gallery-cap-item" data-reveal>
+        <div style="overflow:hidden">
+          <img class="gallery-cap-img" src="../assets/images/scarlett-ecurie-corps.jpg" alt="Scarlett — premiers jours en écurie, poulain debout, ultra-sociable">
+        </div>
+        <div class="gallery-cap-body">
+          <span class="gallery-cap-label"><i class="fa-solid fa-heart" style="font-size:.7rem"></i> Premiers Jours</span>
+          <p>Dès ses premiers jours en écurie, Scarlett cherche le contact. Une sociabilité fusionnelle hors du commun : c'est elle qui vient à vous, réclame ses caresses, crée le lien.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 3b — QASHMIRE : FICHE COMPLÈTE
+════════════════════════════════════════════════════════════ -->
+<section class="section bg-low">
+  <div class="container">
+
+    <div class="section-header" data-reveal>
+      <span class="eyebrow">Naissance d'exception · Avril 2026</span>
+      <h2>Qashmire de l'Arche du Négadis<br><em style="color:var(--gold)">L'Élégance et la Douceur en Héritage</em></h2>
+      <div class="sep sep-left"></div>
+      <p style="max-width:660px;color:var(--text-secondary)">Fruit d'une union d'élite entre notre étalon Macchiato et la jument Gemme, Qashmire réunit en elle la beauté du père et la douceur infinie de sa mère. Une pouliche d'exception inscrite au registre AMHA, déjà reconnaissable à ses petits yeux bleus hérités de Macchiato.</p>
+    </div>
+
+    <!-- FICHE GRID -->
+    <div class="fiche-grid" style="margin-top:4.5rem">
+
+      <!-- Galerie sticky -->
+      <div class="fiche-sticky" data-reveal="left">
+        <div class="fiche-main-img">
+          <img src="../assets/images/qashmire-studio-portrait.jpg" alt="Qashmire de l'Arche du Négadis — Pouliche miniature AMHA, portrait studio fond noir">
+        </div>
+        <div class="fiche-thumbs">
+          <div class="fiche-thumb active">
+            <img src="../assets/images/qashmire-studio-portrait.jpg" alt="Qashmire — portrait studio plein corps">
+          </div>
+          <div class="fiche-thumb">
+            <img src="../assets/images/qashmire-studio-trio.jpg" alt="Qashmire — triptyque studio trois angles">
+          </div>
+          <div class="fiche-thumb">
+            <img src="../assets/images/qashmire-prairie-1.jpg" alt="Qashmire — en liberté dans le jardin">
+          </div>
+          <div class="fiche-thumb">
+            <img src="../assets/images/qashmire-prairie-2.jpg" alt="Qashmire — premiers pas dehors">
+          </div>
+        </div>
+      </div>
+
+      <!-- Détails / contenu -->
+      <div data-reveal="right">
+
+        <!-- Badges -->
+        <div style="display:flex;gap:.5rem;margin-bottom:1.5rem;flex-wrap:wrap">
+          <span class="badge">AMHA</span>
+          <span class="badge badge-avail"><i class="fa-solid fa-circle" style="font-size:.45rem"></i> Disponible</span>
+        </div>
+
+        <!-- Nom -->
+        <h3 style="font-size:clamp(1.7rem,3vw,2.6rem);margin-bottom:.35rem;line-height:1.1">Qashmire</h3>
+        <p style="font-family:var(--font-serif);font-style:italic;font-size:1rem;color:var(--gold-muted);margin-bottom:.4rem">de l'Arche du Négadis</p>
+        <p style="font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:2rem">Pouliche · Née avril 2026 · Couleur du père</p>
+
+        <!-- Accroche -->
+        <p style="color:var(--text-secondary);margin-bottom:1.2rem">Qashmire porte fièrement la signature de son père : elle arbore la <strong style="color:var(--text-primary)">couleur distinctive de Macchiato</strong> et ses <strong style="color:var(--text-primary)">petits yeux bleus</strong>, une caractéristique rare et très recherchée dans la race, transmise une fois de plus avec constance. Sa morphologie fine et déjà très harmonieuse incarne le standard de perfection du cheval miniature américain.</p>
+        <p style="color:var(--text-secondary);margin-bottom:2rem">De sa mère Gemme, elle a hérité d'un <strong style="color:var(--text-primary)">tempérament exceptionnel</strong> : c'est une vraie « petite amour », d'une sérénité et d'une tendresse naturelles. Ultra-sociable dès ses premiers instants, elle cherche le contact humain avec une confiance absolue, faisant d'elle la compagne de vie idéale.</p>
+
+        <!-- Fiche technique -->
+        <div class="data-table">
+          <div class="data-row">
+            <span class="data-label">Nom Officiel</span>
+            <span class="data-val">Qashmire de l'Arche du Négadis</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Naissance</span>
+            <span class="data-val">Avril 2026</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Sexe</span>
+            <span class="data-val">Pouliche</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Registre</span>
+            <span class="data-val">AMHA (American Miniature Horse Association)</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Père</span>
+            <span class="data-val">Macchiato de l'Arche</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Mère</span>
+            <span class="data-val">Gemme</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Signes Distinctifs</span>
+            <span class="data-val">Petits yeux bleus &amp; Couleur du père</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Caractère</span>
+            <span class="data-val">Très sociable · Grande gentillesse (héritage Gemme)</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Santé ACAN</span>
+            <span class="data-val"><span style="display:inline-flex;align-items:center;gap:.35rem;color:#7fcf8e"><i class="fa-solid fa-circle-check"></i> N/N — Saine par filiation</span></span>
+          </div>
+        </div>
+
+        <a href="contact.html" class="btn btn-gold" style="margin-top:1.75rem"><i class="fa-solid fa-envelope"></i> Nous contacter pour Qashmire</a>
+        <a href="contact.html" class="btn btn-outline" style="margin-top:1.75rem;margin-left:.75rem"><i class="fa-solid fa-calendar-days"></i> Visiter l'élevage</a>
+      </div>
+    </div>
+
+    <!-- Parents de Qashmire -->
+    <div style="margin-top:5rem" data-reveal>
+      <span class="eyebrow">Son héritage</span>
+      <h3 style="margin-bottom:2rem">Les Parents de Qashmire</h3>
+      <div class="parent-grid">
+        <div class="parent-card">
+          <div class="parent-img-wrap">
+            <img src="../assets/images/etalon-macchiato-2.png" alt="Macchiato de l'Arche — Étalon miniature AMHA père de Qashmire" style="filter:sepia(5%) brightness(.88)">
+          </div>
+          <div class="parent-body">
+            <span class="eyebrow">Père</span>
+            <h4>Macchiato de l'Arche</h4>
+            <p style="color:var(--text-secondary);font-size:.85rem;margin:.5rem 0 1rem">Étalon d'élite · Standard AMHA/AMHR · Allures pur-sang arabe · Éclats bleus dans les yeux · ACAN N/N</p>
+            <a href="etalons-miniatures.html" class="btn-link">Voir la fiche complète <i class="fa-solid fa-arrow-right" style="font-size:.7rem"></i></a>
+          </div>
+        </div>
+        <div class="parent-card">
+          <div class="parent-img-wrap">
+            <img src="../assets/images/gemme.jpg" alt="Gemme — Jument miniature mère de Qashmire" style="filter:sepia(5%) brightness(.88)">
+          </div>
+          <div class="parent-body">
+            <span class="eyebrow">Mère</span>
+            <h4>Gemme</h4>
+            <p style="color:var(--text-secondary);font-size:.85rem;margin:.5rem 0 1rem">Jument de caractère · Tempérament exceptionnel · Douceur &amp; sociabilité · ACAN N/N</p>
+            <a href="juments-miniatures.html#gemme" class="btn-link">Voir la fiche complète <i class="fa-solid fa-arrow-right" style="font-size:.7rem"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Galerie captionnée Qashmire (4 photos) -->
+    <div style="margin-top:5rem" data-reveal>
+      <span class="eyebrow">Album photos</span>
+      <h3 style="margin-bottom:.5rem">Les Premiers Pas de Qashmire</h3>
+      <p style="color:var(--text-secondary);max-width:560px;margin-bottom:0">Quatre instants capturés pour raconter une vie qui commence.</p>
+    </div>
+
+    <div class="gallery-captioned" style="grid-template-columns:repeat(2,1fr)" data-reveal>
+      <div class="gallery-cap-item" style="grid-column:span 1">
+        <img class="gallery-cap-img" src="../assets/images/qashmire-studio-portrait.jpg" alt="Qashmire — portrait studio, les yeux bleus de l'Arche">
+        <div class="gallery-cap-body">
+          <span class="gallery-cap-label"><i class="fa-solid fa-eye" style="font-size:.7rem"></i> Le Regard Azur</span>
+          <p>Le regard azur de l'Arche : admirez les petits yeux bleus de Qashmire, héritage précieux de son père Macchiato.</p>
+        </div>
+      </div>
+      <div class="gallery-cap-item" style="grid-column:span 1">
+        <img class="gallery-cap-img" src="../assets/images/qashmire-studio-trio.jpg" alt="Qashmire — triptyque studio trois angles, pouliche miniature AMHA">
+        <div class="gallery-cap-body">
+          <span class="gallery-cap-label"><i class="fa-solid fa-star" style="font-size:.7rem"></i> Élégance AMHA</span>
+          <p>Une morphologie fine et une couleur superbe pour cette pouliche née en avril 2026, digne héritière de son père.</p>
+        </div>
+      </div>
+      <div class="gallery-cap-item" style="grid-column:span 1">
+        <img class="gallery-cap-img" src="../assets/images/qashmire-prairie-2.jpg" alt="Qashmire — au jardin, complicité et douceur">
+        <div class="gallery-cap-body">
+          <span class="gallery-cap-label"><i class="fa-solid fa-heart" style="font-size:.7rem"></i> Le Caractère de Gemme</span>
+          <p>Qashmire est un vrai petit amour, d'une gentillesse et d'une sociabilité exemplaires — le don de sa mère Gemme.</p>
+        </div>
+      </div>
+      <div class="gallery-cap-item" style="grid-column:span 1">
+        <img class="gallery-cap-img" src="../assets/images/qashmire-prairie-1.jpg" alt="Qashmire — premiers instants en extérieur, la relève de l'excellence">
+        <div class="gallery-cap-body">
+          <span class="gallery-cap-label"><i class="fa-solid fa-seedling" style="font-size:.7rem"></i> Premiers Instants</span>
+          <p>La relève de l'excellence : Qashmire de l'Arche du Négadis, une promesse d'avenir pour notre élevage.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 4 — ENGAGEMENT + SERVICES
+════════════════════════════════════════════════════════════ -->
+<section class="section bg-low">
+  <div class="container-sm">
+    <div class="section-header" data-reveal>
+      <span class="eyebrow">Notre engagement</span>
+      <h2>Adopter un poulain<br>à l'Arche du Négadis</h2>
+      <div class="sep sep-left"></div>
+    </div>
+    <div class="quote-block" data-reveal>
+      <p>« Chaque poulain qui quitte l'Arche du Négadis emporte avec lui bien plus qu'un certificat d'origine. Il emporte notre confiance, notre suivi et notre passion — des valeurs que nous transmettons à chacun de nos acquéreurs. »</p>
+      <cite>— L'élevage Arche du Négadis</cite>
+    </div>
+    <div class="services-grid" style="margin-top:2.5rem" data-reveal>
+      <div class="service-item"><div class="service-icon">📋</div><div><h3>Dossier Complet</h3><p>Chaque poulain est vendu avec son pedigree AMHA/AMHR, les résultats de ses tests génétiques, son identification SIRE et son carnet de santé vétérinaire à jour.</p></div></div>
+      <div class="service-item"><div class="service-icon">🧬</div><div><h3>Garantie Génétique</h3><p>Parents testés N/N ACAN (nanisme chondrodysplasique). Robe vérifiée par test ADN. Aucun poulain vendu sans confirmation de ses deux parents.</p></div></div>
+      <div class="service-item"><div class="service-icon">🤝</div><div><h3>Accompagnement</h3><p>Nous restons disponibles après la vente pour répondre à vos questions sur l'alimentation, le logement, les soins et les spécificités du cheval miniature américain.</p></div></div>
+      <div class="service-item"><div class="service-icon">🚚</div><div><h3>Transport</h3><p>Nous pouvons vous orienter vers des transporteurs équins de confiance pour un acheminement dans les meilleures conditions, partout en France et en Europe.</p></div></div>
+    </div>
+
+    <!-- Prochaines naissances -->
+    <div class="future-foals" data-reveal>
+      <div class="future-foals-icon">🔔</div>
+      <div class="future-foals-text">
+        <h3>Prochaines Naissances 2026</h3>
+        <p>D'autres poulains issus de nos lignées d'élite sont à venir cette saison. Inscrivez-vous pour être alerté en priorité et réserver votre futur compagnon avant l'annonce publique.</p>
+      </div>
+      <a href="contact.html" class="btn btn-outline" style="flex-shrink:0"><i class="fa-solid fa-bell"></i> M'alerter</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 5 — CTA FINAL
+════════════════════════════════════════════════════════════ -->
+<section class="section-sm" data-reveal>
+  <div class="container text-center">
+    <h2 style="margin-bottom:1.25rem">Prêt à accueillir<br>un cheval miniature américain ?</h2>
+    <p style="max-width:500px;margin:0 auto 2rem;color:var(--text-secondary)">Contactez-nous pour discuter de votre projet, visiter l'élevage et rencontrer Scarlett et nos reproducteurs. Chaque acquéreur mérite un accueil personnalisé.</p>
+    <a href="contact.html" class="btn btn-gold"><i class="fa-solid fa-envelope"></i> Nous Contacter</a>
+  </div>
+</section>
+
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div><img src="../assets/images/logo.png" alt="Logo" class="footer-logo"><div class="footer-brand-name">L'Arche du Négadis</div><div class="footer-brand-tag">Élevage d'Excellence · Hérault</div><div class="footer-contact"><div class="footer-contact-line"><i class="fa-solid fa-location-dot"></i><span>Chemin du Negadis, 34230 Paulhan</span></div><div class="footer-contact-line"><i class="fa-solid fa-phone"></i><a href="tel:+33620557867">06 20 55 78 67</a></div><div class="footer-contact-line"><i class="fa-solid fa-envelope"></i><a href="mailto:sarahespinas@gmail.com">sarahespinas@gmail.com</a></div></div></div>
+    <div><p class="footer-col-title">Navigation</p><ul class="footer-links"><li><a href="etalons-miniatures.html" class="footer-link">Notre Étalon</a></li><li><a href="juments-miniatures.html" class="footer-link">Nos Juments</a></li><li><a href="origine-mini-chevaux.html" class="footer-link">Origine de la Race</a></li><li><a href="pension.html" class="footer-link">Pension &amp; Gîtes</a></li></ul></div>
+    <div><p class="footer-col-title">Certifications</p><div class="footer-socials"><a href="#" class="footer-social-icon"><i class="fa-brands fa-instagram"></i></a><a href="#" class="footer-social-icon"><i class="fa-brands fa-facebook-f"></i></a></div><div class="footer-labels"><span class="footer-label">AMHA</span><span class="footer-label">AMHR</span><span class="footer-label">AFCM</span><span class="footer-label">Testé ACAN</span></div></div>
+  </div>
+  <div class="footer-bottom"><p class="footer-copy">© 2025 L'Arche du Négadis — Fait avec passion à Paulhan, Hérault</p><nav class="footer-legal"><a href="mentions-legales.html">Mentions légales</a></nav></div>
+</div></footer>
+<script src="../assets/script.js"></script>
+</body></html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comment Mesurer un Cheval Miniature Américain — Protocole Officiel AMHA/AMHR</title>
+<meta name="description" content="Protocole officiel AMHA/AMHR pour mesurer un cheval miniature : mesure au dernier crin, position correcte, erreurs à éviter et tableau de conversion pouces/cm.">
+<link rel="canonical" href="https://archednegadis.fr/pages/mesurer-cheval-miniature.html">
+<meta property="og:title" content="Comment Mesurer un Cheval Miniature Américain — Protocole Officiel AMHA/AMHR">
+<meta property="og:description" content="Protocole officiel AMHA/AMHR pour mesurer un cheval miniature : mesure au dernier crin, position correcte, erreurs à éviter et tableau de conversion pouces/cm.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://archednegadis.fr/pages/mesurer-cheval-miniature.html">
+<meta property="og:image" content="https://archednegadis.fr/assets/images/race-poulain-portrait.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Comment Mesurer un Cheval Miniature Américain — Protocole Officiel AMHA/AMHR">
+<meta name="twitter:description" content="Protocole officiel AMHA/AMHR pour mesurer un cheval miniature : mesure au dernier crin, position correcte, erreurs à éviter et tableau de conversion pouces/cm.">
+<meta name="twitter:image" content="https://archednegadis.fr/assets/images/race-poulain-portrait.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://archednegadis.fr/"},
+    {"@type":"ListItem","position":2,"name":"La Race","item":"https://archednegadis.fr/pages/origine-mini-chevaux.html"},
+    {"@type":"ListItem","position":3,"name":"Comment Mesurer","item":"https://archednegadis.fr/pages/mesurer-cheval-miniature.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Où exactement est le dernier crin sur un cheval miniature ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le dernier crin est le dernier poil de la crinière, au point où celle-ci rejoint la région du garrot. Ce n'est pas le garrot lui-même (l'apophyse épineuse de T2/T3), mais le dernier point où poussent les crins de la crinière, légèrement en avant du garrot osseux. C'est ce point qui constitue le repère anatomique officiel pour la mesure AMHA et AMHR."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Un juge officiel mesure-t-il différemment lors d'un show ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En show AMHA ou AMHR, un juge agréé effectue la mesure sur sol plat et dur, en présence du présentateur. La mesure est effectuée trois fois et la moyenne est retenue (règle officielle AMHA). Le cheval doit être en station régulière, tête en position neutre. Toute contestation doit être formulée avant la fin du show."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ma jument mesure 33,5 pouces, peut-elle être enregistrée AMHA ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Toute jument mesurant 34 pouces (86,36 cm) ou moins est éligible à l'enregistrement AMHA, sous réserve de vérification de la filiation et du respect des autres critères morphologiques du standard. Elle est également éligible à l'AMHR Division A."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le cheval miniature grandit-il encore après 3 ans ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, légèrement. Un cheval miniature peut continuer à croître jusqu'à 4 à 5 ans, même si la majeure partie de sa croissance est terminée à 3 ans. Pour les chevaux proches de la limite des 34 pouces, une mesure de confirmation à 4-5 ans est recommandée avant de prendre des décisions d'enregistrement définitives."
+      }
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="../assets/styles.css">
+<style>
+  .protocol-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem;margin-top:2.5rem}
+  .protocol-step{background:var(--surface-low);border-radius:var(--r-lg);padding:2rem 1.75rem;position:relative;overflow:hidden;transition:all var(--t)}
+  .protocol-step::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity var(--t)}
+  .protocol-step:hover{background:var(--surface-mid);transform:translateY(-4px)}
+  .protocol-step:hover::before{opacity:1}
+  .step-number{font-family:'Noto Serif',serif;font-size:2.8rem;font-weight:600;color:rgba(242,202,80,.15);line-height:1;margin-bottom:1rem;display:block}
+  .protocol-step h4{font-size:1rem;margin-bottom:.6rem;color:var(--text-headline)}
+  .protocol-step p{font-size:.87rem;color:var(--text-secondary);line-height:1.65;margin:0}
+
+  .errors-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2rem}
+  .error-card{background:rgba(220,53,69,.06);border-radius:var(--r-md);padding:1.5rem;border-left:2px solid rgba(220,53,69,.4);display:flex;gap:1rem;align-items:flex-start}
+  .error-icon{color:rgba(220,53,69,.7);font-size:1.1rem;flex-shrink:0;margin-top:.15rem}
+  .error-card h4{font-size:.92rem;margin-bottom:.35rem;color:var(--text-headline)}
+  .error-card p{font-size:.85rem;color:var(--text-secondary);line-height:1.6;margin:0}
+
+  .conversion-table{width:100%;border-collapse:collapse;margin-top:2rem}
+  .conversion-table th{background:rgba(242,202,80,.1);color:var(--gold);font-family:'Manrope',sans-serif;font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.07em;padding:.9rem 1.25rem;text-align:left;border-bottom:1px solid rgba(242,202,80,.2)}
+  .conversion-table td{padding:.85rem 1.25rem;font-size:.92rem;color:var(--text-secondary);border-bottom:1px solid rgba(255,255,255,.04)}
+  .conversion-table tr:last-child td{border-bottom:none}
+  .conversion-table tr:hover td{background:rgba(255,255,255,.02)}
+  .conversion-table td.highlight{color:var(--gold);font-weight:600}
+  .conversion-table td .badge-inline{display:inline-block;background:rgba(242,202,80,.15);color:var(--gold);font-size:.75rem;padding:.15rem .6rem;border-radius:1rem;margin-left:.5rem;font-family:'Manrope',sans-serif;font-weight:600}
+
+  .key-point{background:rgba(242,202,80,.06);border:1px solid rgba(242,202,80,.15);border-radius:var(--r-lg);padding:2rem 2.5rem;margin-top:2.5rem;display:flex;gap:1.5rem;align-items:flex-start}
+  .key-point-icon{font-size:1.5rem;color:var(--gold);flex-shrink:0;margin-top:.2rem}
+  .key-point p{font-size:.92rem;color:var(--text-secondary);line-height:1.7;margin:0}
+  .key-point strong{color:var(--text-headline)}
+
+  @media(max-width:900px){.protocol-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:640px){.protocol-grid,.errors-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <a href="../index.html" class="nav-brand"><img src="../assets/images/logo.png" alt="Logo L'Arche du Négadis" class="nav-logo"><div class="nav-brand-text"><span class="nav-brand-name">L'Arche du Négadis</span><span class="nav-brand-tag">Élevage d'Excellence · Hérault</span></div></a>
+  <ul class="nav-links">
+    <li><a href="../index.html" class="nav-link">Accueil</a></li>
+    <li><a href="a-propos.html" class="nav-link">À Propos</a></li>
+    <li class="nav-drop"><button class="nav-drop-btn">Nos Miniatures <span class="drop-arrow">▾</span></button><ul class="drop-menu"><li><a href="etalons-miniatures.html" class="drop-item">Notre Étalon</a></li><li><a href="juments-miniatures.html" class="drop-item">Nos Juments</a></li><li><a href="poulains.html" class="drop-item">Nos Poulains</a></li></ul></li>
+    <li class="nav-drop"><button class="nav-drop-btn" aria-haspopup="true" aria-expanded="false">La Race <span class="drop-arrow">▾</span></button><ul class="drop-menu" role="list"><li><a href="origine-mini-chevaux.html" class="drop-item">Origine &amp; Histoire</a></li><li><a href="definition-cheval-miniature.html" class="drop-item">Définition</a></li><li><a href="amha-vs-amhr.html" class="drop-item">AMHA vs AMHR</a></li><li><a href="mesurer-cheval-miniature.html" class="drop-item">Comment Mesurer</a></li><li><a href="nutrition-paturage.html" class="drop-item">Nutrition &amp; Pâturage</a></li><li><a href="genetique-acan.html" class="drop-item">Génétique &amp; ACAN</a></li><li><a href="reglementation-france.html" class="drop-item">Réglementation France</a></li></ul></li>
+    <li><a href="pension.html" class="nav-link">Pension</a></li>
+    <li><a href="gites.html" class="nav-link">Gîtes</a></li>
+    <li><a href="https://braque-de-weimar-herault.fr/" class="nav-link nav-link-ext" target="_blank" rel="noopener noreferrer">Braque de Weimar <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.6rem"></i></a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+  <button class="nav-burger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav"><button class="mobile-close"><i class="fa-solid fa-xmark"></i></button><a href="../index.html">Accueil</a><a href="a-propos.html">À Propos</a><a href="etalons-miniatures.html">Notre Étalon</a><a href="juments-miniatures.html">Nos Juments</a><a href="poulains.html">Nos Poulains</a><a href="origine-mini-chevaux.html">Origine de la Race</a><a href="definition-cheval-miniature.html">Définition</a><a href="amha-vs-amhr.html">AMHA vs AMHR</a><a href="mesurer-cheval-miniature.html">Comment Mesurer</a><a href="nutrition-paturage.html">Nutrition &amp; Pâturage</a><a href="genetique-acan.html">Génétique &amp; ACAN</a><a href="reglementation-france.html">Réglementation France</a><a href="pension.html">Pension</a><a href="gites.html">Gîtes</a><a href="https://braque-de-weimar-herault.fr/" target="_blank" rel="noopener noreferrer">Braque de Weimar ↗</a><a href="contact.html">Contact</a></div>
+
+<!-- HERO -->
+<section class="hero hero-page" aria-label="Comment mesurer un cheval miniature américain — protocole officiel AMHA AMHR">
+  <div class="hero-bg" aria-hidden="true">
+    <img src="../assets/images/race-poulain-portrait.jpg" alt="Poulain cheval miniature américain — L'Arche du Négadis, Paulhan Hérault">
+  </div>
+  <div class="hero-veil" aria-hidden="true"></div>
+  <div class="hero-content">
+    <nav class="breadcrumb hero-breadcrumb"><a href="../index.html">Accueil</a><span class="breadcrumb-sep">›</span><a href="origine-mini-chevaux.html">La Race</a><span class="breadcrumb-sep">›</span><span>Comment Mesurer</span></nav>
+    <span class="hero-eyebrow">La Race · Protocole Officiel</span>
+    <h1>Comment mesurer un cheval miniature américain : <em>le protocole officiel</em></h1>
+    <p class="hero-sub">La mesure au dernier crin est une règle absolue des registres AMHA et AMHR. Une erreur de repère anatomique peut invalider l'éligibilité d'un cheval. Voici le protocole exact, étape par étape.</p>
+  </div>
+</section>
+
+<!-- SECTION 1 : INTRO / POINT CLÉ -->
+<section class="section">
+  <div class="container">
+    <div class="domaine-grid">
+      <div data-reveal="left">
+        <span class="eyebrow">La règle fondamentale</span>
+        <h2>Pas au garrot — au dernier crin</h2>
+        <div class="sep sep-left"></div>
+        <p>Contrairement aux chevaux de grande taille et aux poneys — qui se mesurent <strong>au garrot</strong> — le cheval miniature américain se mesure au <strong>dernier crin de la crinière</strong>. Ce repère anatomique, propre aux standards AMHA et AMHR, correspond au dernier poil de la crinière au point exact où elle rejoint la région du garrot.</p>
+        <p>Cette différence n'est pas anodine. Sur un cheval miniature, le garrot est souvent peu saillant ; la mesure au dernier crin garantit une cohérence entre individus et élimine les variations d'interprétation anatomique. Une confusion entre les deux points peut représenter <strong>1 à 2 pouces d'écart</strong> — suffisant pour rendre un cheval inéligible à l'AMHA.</p>
+        <div class="key-point" style="margin-top:1.75rem">
+          <i class="fa-solid fa-triangle-exclamation key-point-icon"></i>
+          <p><strong>Règle officielle AMHA :</strong> la mesure s'effectue 3 fois. La moyenne des trois relevés constitue la taille officielle du cheval. Cette règle s'applique lors des shows et inspections d'enregistrement.</p>
+        </div>
+      </div>
+      <div data-reveal="right">
+        <img src="../assets/images/race-poulain-portrait.jpg" alt="Portrait d'un poulain cheval miniature américain — Arche du Négadis" style="width:100%;border-radius:var(--r-lg);object-fit:cover;height:480px;filter:sepia(6%) brightness(.9) contrast(1.05)">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2 : PROTOCOLE ÉTAPE PAR ÉTAPE -->
+<section class="section bg-low">
+  <div class="container">
+    <div class="section-header text-center" data-reveal>
+      <span class="eyebrow">Le protocole en 6 étapes</span>
+      <h2>Mesurer correctement<br>un cheval miniature</h2>
+      <div class="sep"></div>
+      <p style="max-width:560px;margin:1.5rem auto 0;color:var(--text-secondary)">Suivez ces six étapes dans l'ordre pour obtenir une mesure conforme aux exigences des registres AMHA et AMHR.</p>
+    </div>
+    <div class="protocol-grid" data-reveal>
+      <div class="protocol-step">
+        <span class="step-number">01</span>
+        <h4><i class="fa-solid fa-road" style="color:var(--gold);margin-right:.5rem"></i>Sol dur et plat</h4>
+        <p>La mesure s'effectue impérativement sur surface pavée, bétonnée ou terre compactée. Un sol en herbe ou terrain meuble modifie la posture du cheval et fausse la mesure jusqu'à 0,5 pouce.</p>
+      </div>
+      <div class="protocol-step">
+        <span class="step-number">02</span>
+        <h4><i class="fa-solid fa-horse" style="color:var(--gold);margin-right:.5rem"></i>Station régulière</h4>
+        <p>Le cheval est placé en station régulière : les quatre membres bien aplombés, perpendiculaires au sol, corps droit. La tête est en position neutre — ni levée, ni abaissée, ni tournée.</p>
+      </div>
+      <div class="protocol-step">
+        <span class="step-number">03</span>
+        <h4><i class="fa-solid fa-hand-pointer" style="color:var(--gold);margin-right:.5rem"></i>Identifier le dernier crin</h4>
+        <p>Localiser le dernier poil de la crinière — le point où la crinière se termine et rejoint la région du garrot. C'est ce point précis, et non l'apophyse épineuse du garrot osseux, qui constitue le repère de mesure.</p>
+      </div>
+      <div class="protocol-step">
+        <span class="step-number">04</span>
+        <h4><i class="fa-solid fa-ruler-vertical" style="color:var(--gold);margin-right:.5rem"></i>Poser la toise verticalement</h4>
+        <p>Placer la toise (measuring stick) à la verticale, côté du cheval, avec l'équerre horizontale touchant le dernier crin. La toise doit être parfaitement perpendiculaire au sol.</p>
+      </div>
+      <div class="protocol-step">
+        <span class="step-number">05</span>
+        <h4><i class="fa-solid fa-eye" style="color:var(--gold);margin-right:.5rem"></i>Lire la mesure en pouces</h4>
+        <p>La mesure se lit à hauteur de l'équerre, en pouces. Les registres américains expriment toujours la taille en pouces. 1 pouce = 2,54 cm. La lecture doit être faite à hauteur d'yeux pour éviter l'erreur de parallaxe.</p>
+      </div>
+      <div class="protocol-step">
+        <span class="step-number">06</span>
+        <h4><i class="fa-solid fa-rotate" style="color:var(--gold);margin-right:.5rem"></i>Répéter 3 fois</h4>
+        <p>Règle officielle AMHA : effectuer trois mesures successives. La moyenne des trois relevés constitue la taille officielle. En cas d'écart de plus de 0,25 pouce entre deux relevés, reprendre la procédure depuis le début.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 : ERREURS FRÉQUENTES -->
+<section class="section">
+  <div class="container">
+    <div class="section-header text-center" data-reveal>
+      <span class="eyebrow">Pièges à éviter</span>
+      <h2>Les erreurs les plus fréquentes<br>lors de la mesure</h2>
+      <div class="sep"></div>
+      <p style="max-width:560px;margin:1.5rem auto 0;color:var(--text-secondary)">Ces erreurs courantes peuvent conduire à une mesure inexacte — parfois suffisante pour rendre un cheval inéligible à l'enregistrement.</p>
+    </div>
+    <div class="errors-grid" data-reveal>
+      <div class="error-card">
+        <i class="fa-solid fa-xmark error-icon"></i>
+        <div>
+          <h4>Mesurer au garrot osseux</h4>
+          <p>Le garrot osseux (apex des apophyses épineuses) est situé légèrement en arrière et souvent plus bas que le dernier crin. Mesurer à ce point sous-estime ou surestime la taille selon la morphologie individuelle.</p>
+        </div>
+      </div>
+      <div class="error-card">
+        <i class="fa-solid fa-xmark error-icon"></i>
+        <div>
+          <h4>Mesurer sur herbe ou sol souple</h4>
+          <p>Sur un sol meuble ou en herbe, les sabots s'enfoncent et la posture se modifie. Même quelques millimètres d'enfoncement peuvent représenter 0,3 à 0,5 pouce de différence sur la mesure finale.</p>
+        </div>
+      </div>
+      <div class="error-card">
+        <i class="fa-solid fa-xmark error-icon"></i>
+        <div>
+          <h4>Cheval non en station régulière</h4>
+          <p>Un membre avancé, reculé ou croisé modifie significativement la hauteur au garrot. Le cheval doit être carré, membres parfaitement aplombés, avant de prendre la mesure.</p>
+        </div>
+      </div>
+      <div class="error-card">
+        <i class="fa-solid fa-xmark error-icon"></i>
+        <div>
+          <h4>Tête trop haute ou trop basse</h4>
+          <p>Un cheval qui porte haut ou bas la tête contracte ou relâche les muscles du cou et de l'encolure, modifiant la position des vertèbres cervicales et la hauteur du dernier crin. La tête doit être en position neutre.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 : TABLE DE CONVERSION -->
+<section class="section bg-low">
+  <div class="container container-sm">
+    <div class="section-header text-center" data-reveal>
+      <span class="eyebrow">Conversion officielle</span>
+      <h2>Pouces vers centimètres :<br>les tailles de référence</h2>
+      <div class="sep"></div>
+      <p style="max-width:520px;margin:1.5rem auto 0;color:var(--text-secondary)">1 pouce = 2,54 cm. Les limites AMHA (34") et AMHR Division B (38") sont les deux repères essentiels.</p>
+    </div>
+    <div data-reveal style="overflow-x:auto">
+      <table class="conversion-table">
+        <thead>
+          <tr>
+            <th>Pouces</th>
+            <th>Centimètres</th>
+            <th>Éligibilité</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="highlight">34"</td>
+            <td>86,36 cm</td>
+            <td><span class="badge">AMHA</span> <span class="badge">AMHR Div. A</span></td>
+          </tr>
+          <tr>
+            <td>35"</td>
+            <td>88,90 cm</td>
+            <td><span style="font-size:.85rem;color:var(--text-secondary)">AMHR Division B uniquement</span></td>
+          </tr>
+          <tr>
+            <td>36"</td>
+            <td>91,44 cm</td>
+            <td><span style="font-size:.85rem;color:var(--text-secondary)">AMHR Division B uniquement</span></td>
+          </tr>
+          <tr>
+            <td>37"</td>
+            <td>93,98 cm</td>
+            <td><span style="font-size:.85rem;color:var(--text-secondary)">AMHR Division B uniquement</span></td>
+          </tr>
+          <tr>
+            <td class="highlight">38"</td>
+            <td>96,52 cm</td>
+            <td><span class="badge">AMHR Div. B max</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:.8rem;color:var(--text-secondary);margin-top:1rem;text-align:center">Au-delà de 38 pouces (96,52 cm), le cheval n'est éligible à aucun des deux registres américains du miniature.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container container-sm">
+    <div class="section-header text-center" data-reveal>
+      <span class="eyebrow">Questions fréquentes</span>
+      <h2>Tout sur la mesure<br>du cheval miniature</h2>
+      <div class="sep"></div>
+    </div>
+    <div class="faq-accordion" data-reveal>
+      <div class="faq-item">
+        <button class="faq-btn">Où exactement est le dernier crin ?<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-body"><div class="faq-body-inner">
+          <p>Le dernier crin est le <strong>dernier poil de la crinière</strong>, au point où celle-ci rejoint la région du garrot. Ce n'est pas le garrot lui-même (l'apophyse épineuse de T2/T3), mais le dernier point où poussent les crins de la crinière, légèrement en avant du garrot osseux. C'est ce point qui constitue le repère anatomique officiel pour la mesure AMHA et AMHR.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Un juge officiel mesure-t-il différemment lors d'un show ?<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-body"><div class="faq-body-inner">
+          <p>En show AMHA ou AMHR, un juge agréé effectue la mesure sur sol plat et dur, en présence du présentateur. La mesure est effectuée <strong>trois fois</strong> et la moyenne est retenue (règle officielle AMHA). Le cheval doit être en station régulière, tête en position neutre. Toute contestation doit être formulée avant la fin du show.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Ma jument mesure 33,5 pouces, peut-elle être enregistrée AMHA ?<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-body"><div class="faq-body-inner">
+          <p>Oui. Toute jument mesurant <strong>34 pouces (86,36 cm) ou moins</strong> est éligible à l'enregistrement AMHA, sous réserve de vérification de la filiation et du respect des autres critères morphologiques du standard. Elle est également éligible à l'AMHR Division A. À 33,5 pouces, elle est bien en dessous de la limite et n'a aucune raison d'être refusée sur ce critère.</p>
+        </div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Le cheval miniature grandit-il encore après 3 ans ?<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-body"><div class="faq-body-inner">
+          <p>Oui, légèrement. Un cheval miniature peut continuer à croître jusqu'à <strong>4 à 5 ans</strong>, même si la majeure partie de sa croissance est terminée à 3 ans. Pour les chevaux proches de la limite des 34 pouces, une mesure de confirmation à 4-5 ans est recommandée avant de prendre des décisions d'enregistrement définitives. C'est une information essentielle à communiquer aux acheteurs de yearlings ou de jeunes chevaux.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-sm" data-reveal>
+  <div class="container text-center">
+    <span class="eyebrow">L'Arche du Négadis</span>
+    <h3 style="font-size:1.8rem;margin:.75rem 0 1.25rem">Des reproducteurs conformes aux standards AMHA &amp; AMHR</h3>
+    <p style="max-width:520px;margin:0 auto 2rem;color:var(--text-secondary)">Élevage à Paulhan (Hérault). Tous nos chevaux sont mesurés selon le protocole officiel. Poulains disponibles, accompagnement à l'enregistrement inclus.</p>
+    <div style="display:flex;gap:1.25rem;justify-content:center;flex-wrap:wrap">
+      <a href="etalons-miniatures.html" class="btn btn-gold">Voir nos reproducteurs</a>
+      <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div><img src="../assets/images/logo.png" alt="Logo" class="footer-logo"><div class="footer-brand-name">L'Arche du Négadis</div><div class="footer-brand-tag">Élevage d'Excellence · Hérault</div><div class="footer-contact"><div class="footer-contact-line"><i class="fa-solid fa-location-dot"></i><span>Chemin du Negadis, 34230 Paulhan</span></div><div class="footer-contact-line"><i class="fa-solid fa-phone"></i><a href="tel:+33620557867">06 20 55 78 67</a></div><div class="footer-contact-line"><i class="fa-solid fa-envelope"></i><a href="mailto:sarahespinas@gmail.com">sarahespinas@gmail.com</a></div></div></div>
+    <div><p class="footer-col-title">Navigation</p><ul class="footer-links"><li><a href="etalons-miniatures.html" class="footer-link">Chevaux Miniatures</a></li><li><a href="poulains.html" class="footer-link">Nos Poulains</a></li><li><a href="pension.html" class="footer-link">Pension &amp; Gîtes</a></li><li><a href="https://braque-de-weimar-herault.fr/" class="footer-link" target="_blank" rel="noopener noreferrer">Braque de Weimar ↗</a></li></ul></div>
+    <div><p class="footer-col-title">Certifications</p><div class="footer-socials"><a href="#" class="footer-social-icon"><i class="fa-brands fa-instagram"></i></a><a href="#" class="footer-social-icon"><i class="fa-brands fa-facebook-f"></i></a></div><div class="footer-labels"><span class="footer-label">AMHA</span><span class="footer-label">AMHR</span><span class="footer-label">AFCM</span><span class="footer-label">Testé ACAN</span></div></div>
+  </div>
+  <div class="footer-bottom"><p class="footer-copy">© 2025 L'Arche du Négadis — Fait avec passion à Paulhan, Hérault</p><nav class="footer-legal"><a href="mentions-legales.html">Mentions légales</a><a href="mentions-legales.html#confidentialite">Confidentialité</a></nav></div>
+</div></footer>
+<script src="../assets/script.js"></script>
+</body></html>
