@@ -7,7 +7,7 @@ L'Arche du Négadis est un élevage d'excellence spécialisé dans le cheval min
 - **Certifications** : AMHA (American Miniature Horse Association) & AMHR (American Miniature Horse Registry)
 - **Localisation** : Chemin du Negadis, 34230 Paulhan, Hérault
 - **Contact** : sarahespinas@gmail.com | +33 6 20 55 78 67
-- **Site web** : https://archednegadis.fr
+- **Site web** : https://arche-negadis.fr
 
 ## Activités
 
@@ -43,14 +43,14 @@ L'Arche du Négadis est un élevage d'excellence spécialisé dans le cheval min
 
 ## Pages principales
 
-- Accueil : https://archednegadis.fr/
-- Étalon Macchiato : https://archednegadis.fr/pages/etalons-miniatures.html
-- Juments : https://archednegadis.fr/pages/juments-miniatures.html
-- Poulains à vendre : https://archednegadis.fr/pages/poulains.html
-- Origine de la race : https://archednegadis.fr/pages/origine-mini-chevaux.html
-- Pension équine : https://archednegadis.fr/pages/pension.html
-- Gîtes : https://archednegadis.fr/pages/gites.html
-- Contact : https://archednegadis.fr/pages/contact.html
+- Accueil : https://arche-negadis.fr/
+- Étalon Macchiato : https://arche-negadis.fr/pages/etalons-miniatures.html
+- Juments : https://arche-negadis.fr/pages/juments-miniatures.html
+- Poulains à vendre : https://arche-negadis.fr/pages/poulains.html
+- Origine de la race : https://arche-negadis.fr/pages/origine-mini-chevaux.html
+- Pension équine : https://arche-negadis.fr/pages/pension.html
+- Gîtes : https://arche-negadis.fr/pages/gites.html
+- Contact : https://arche-negadis.fr/pages/contact.html
 
 ## Sources de référence
 

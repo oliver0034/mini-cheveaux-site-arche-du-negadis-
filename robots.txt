@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://archednegadis.fr/sitemap.xml
+Sitemap: https://arche-negadis.fr/sitemap.xml
 
 # AI crawlers — autorisation explicite pour l'indexation IA
 User-agent: GPTBot
