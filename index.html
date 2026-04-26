@@ -27,84 +27,78 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "AnimalShelter",
-  "name": "L'Arche du Négadis",
-  "description": "Élevage d'excellence de chevaux miniatures américains AMHA & AMHR en Occitanie",
-  "address": {"@type":"PostalAddress","streetAddress":"Chemin du Negadis","addressLocality":"Paulhan","postalCode":"34230","addressCountry":"FR"},
-  "telephone": "+33620557867",
-  "email": "sarahespinas@gmail.com",
-  "url": "https://arche-negadis.fr"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "L'Arche du Négadis",
-  "url": "https://arche-negadis.fr",
-  "logo": "https://arche-negadis.fr/assets/images/logo.png",
-  "image": "https://arche-negadis.fr/assets/images/etalon-macchiato-1.png",
-  "description": "Élevage d'excellence de chevaux miniatures américains AMHA & AMHR en Occitanie. Vente de poulains, pension équine et gîtes à Paulhan, Hérault.",
-  "address": {"@type":"PostalAddress","streetAddress":"Chemin du Negadis","addressLocality":"Paulhan","postalCode":"34230","addressRegion":"Hérault","addressCountry":"FR"},
-  "telephone": "+33620557867",
-  "email": "sarahespinas@gmail.com",
-  "contactPoint": {"@type":"ContactPoint","telephone":"+33620557867","contactType":"customer service","availableLanguage":"French"},
-  "areaServed": {"@type":"GeoCircle","geoMidpoint":{"@type":"GeoCoordinates","latitude":"43.5373","longitude":"3.4473"},"geoRadius":"80000"},
-  "sameAs": []
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Le cheval miniature est-il un poney ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Non. Morphologiquement, le cheval miniature américain n'est pas un poney. Là où le poney est souvent trapu, le miniature possède les proportions, l'élégance et la finesse d'un cheval de sang en réduction. Les lignées AMHA sont sélectionnées pour leur allure de pur-sang miniature."
-      }
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": "https://arche-negadis.fr/#organization",
+      "name": "L'Arche du Négadis",
+      "url": "https://arche-negadis.fr",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://arche-negadis.fr/assets/images/logo.png"
+      },
+      "image": "https://arche-negadis.fr/assets/images/etalon-macchiato-1.png",
+      "description": "Élevage de chevaux miniatures américains certifiés AMHA et AMHR à Paulhan, Hérault. Pension équine, gîtes de charme et poulains disponibles.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chemin du Negadis",
+        "addressLocality": "Paulhan",
+        "postalCode": "34230",
+        "addressRegion": "Hérault",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.5386,
+        "longitude": 3.4567
+      },
+      "telephone": "+33620557867",
+      "email": "sarahespinas@gmail.com",
+      "contactPoint": {"@type":"ContactPoint","telephone":"+33620557867","contactType":"customer service","availableLanguage":"French"},
+      "areaServed": ["Hérault", "Occitanie", "France"],
+      "priceRange": "€€"
     },
     {
-      "@type": "Question",
-      "name": "Quel est le tempérament d'un cheval miniature américain ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Le miniature est réputé pour être extrêmement proche de l'homme. Sélectionnés pour leur douceur et leur grande intelligence, ils sont curieux, affectueux et apprennent très vite, ce qui en fait des compagnons exceptionnels pour la famille ou pour des projets de médiation animale."
-      }
+      "@type": "WebSite",
+      "@id": "https://arche-negadis.fr/#website",
+      "url": "https://arche-negadis.fr",
+      "name": "L'Arche du Négadis",
+      "publisher": {"@id": "https://arche-negadis.fr/#organization"}
     },
     {
-      "@type": "Question",
-      "name": "Peut-on monter un cheval miniature ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Non. Malgré sa force, le cheval miniature (moins de 86 cm) n'est pas conformé pour porter le poids d'un cavalier. En revanche, c'est un athlète redoutable pour l'attelage, le travail à pied (agility) ou la présentation en show (Halter)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quel espace faut-il prévoir pour accueillir un mini cheval ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Un minimum de 1 000 m² à 2 000 m² pour un duo est conseillé. Le miniature est un animal très sociable qui ne peut pas vivre seul ; il a besoin de la compagnie d'un congénère pour son équilibre mental."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quelle est l'espérance de vie d'un cheval miniature ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Avec une alimentation adaptée et des soins réguliers, un cheval miniature peut vivre entre 25 et 30 ans, une longévité souvent supérieure à celle des chevaux de grande taille."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Est-il difficile d'entretenir un cheval miniature ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Son entretien est comparable à celui d'un grand cheval (parage des sabots, vaccins, vermifuges), mais avec des besoins en fourrage réduits. Le point de vigilance principal est son alimentation : étant très rustique, il faut surveiller son poids pour éviter la fourbure."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Le cheval miniature est-il un poney ?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Non. Morphologiquement, le cheval miniature américain n'est pas un poney. Il possède les proportions d'un cheval de sang en réduction — profil fin, ossature légère, encolure élancée. Les lignées AMHA sont sélectionnées pour leur allure de pur-sang miniature."}
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle est l'espérance de vie d'un cheval miniature ?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Entre 25 et 30 ans avec une alimentation adaptée et des soins réguliers."}
+        },
+        {
+          "@type": "Question",
+          "name": "Quel est le tempérament d'un cheval miniature américain ?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Le miniature est réputé pour être extrêmement proche de l'homme. Sélectionnés pour leur douceur et leur grande intelligence, ils sont curieux, affectueux et apprennent très vite."}
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on monter un cheval miniature ?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Non. Malgré sa force, le cheval miniature (moins de 86 cm) n'est pas conformé pour porter le poids d'un cavalier. En revanche, c'est un athlète redoutable pour l'attelage, le travail à pied (agility) ou la présentation en show."}
+        },
+        {
+          "@type": "Question",
+          "name": "Quel espace faut-il prévoir pour accueillir un mini cheval ?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Un minimum de 1 000 m² à 2 000 m² pour un duo est conseillé. Le miniature est très sociable et ne peut pas vivre seul."}
+        },
+        {
+          "@type": "Question",
+          "name": "Est-il difficile d'entretenir un cheval miniature ?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Son entretien est comparable à celui d'un grand cheval (parage des sabots, vaccins, vermifuges), mais avec des besoins en fourrage réduits. Le point de vigilance principal est l'alimentation : il faut surveiller son poids pour éviter la fourbure."}
+        }
+      ]
     }
   ]
 }

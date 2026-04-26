@@ -1,120 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Accueil -->
+  <!-- Page d'accueil -->
   <url>
     <loc>https://arche-negadis.fr/</loc>
-    <lastmod>2026-04-24</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- À Propos -->
+  <!-- Pages principales -->
   <url>
     <loc>https://arche-negadis.fr/pages/a-propos.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Étalon Macchiato -->
-  <url>
-    <loc>https://arche-negadis.fr/pages/etalons-miniatures.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Juments Miniatures -->
-  <url>
-    <loc>https://arche-negadis.fr/pages/juments-miniatures.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Poulains à vendre -->
-  <url>
-    <loc>https://arche-negadis.fr/pages/poulains.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <!-- Origine de la Race -->
-  <url>
-    <loc>https://arche-negadis.fr/pages/origine-mini-chevaux.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- Pension Équine -->
-  <url>
-    <loc>https://arche-negadis.fr/pages/pension.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Gîtes -->
-  <url>
-    <loc>https://arche-negadis.fr/pages/gites.html</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Contact -->
   <url>
     <loc>https://arche-negadis.fr/pages/contact.html</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arche-negadis.fr/pages/pension.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://arche-negadis.fr/pages/gites.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Nos Miniatures -->
+  <url>
+    <loc>https://arche-negadis.fr/pages/etalons-miniatures.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arche-negadis.fr/pages/juments-miniatures.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arche-negadis.fr/pages/poulains.html</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Hub La Race — Spokes éditoriaux -->
+  <url>
+    <loc>https://arche-negadis.fr/pages/origine-mini-chevaux.html</loc>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Pages P0 — Contenu éducatif (à créer) -->
   <url>
     <loc>https://arche-negadis.fr/pages/definition-cheval-miniature.html</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://arche-negadis.fr/pages/amha-vs-amhr.html</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://arche-negadis.fr/pages/mesurer-cheval-miniature.html</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://arche-negadis.fr/pages/nutrition-paturage.html</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://arche-negadis.fr/pages/genetique-acan.html</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://arche-negadis.fr/pages/reglementation-france.html</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.6</priority>
   </url>
 
 </urlset>
