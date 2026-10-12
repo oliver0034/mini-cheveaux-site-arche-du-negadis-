@@ -106,7 +106,10 @@
   document.addEventListener('submit', function (e) {
     var f = e.target;
     if (!f || f.tagName !== 'FORM') return;
-    envoyer('contact_formulaire', { formulaire: f.getAttribute('name') || f.getAttribute('id') || 'sans-nom' });
+    /* Le pied de page de ce site porte un formulaire d'inscription à la lettre d'information
+       (« Subscribe form ») sur toutes les pages : ce n'est pas une prise de contact. */
+    var nomForm = f.getAttribute('name') || f.getAttribute('id') || 'sans-nom';
+    envoyer(/subscribe|newsletter/i.test(nomForm) ? 'inscription_newsletter' : 'contact_formulaire', { formulaire: nomForm });
   }, true);
 
   /* ---------- Placement : ne recouvrir ni une barre fixe du site, ni le bandeau ---------- */
