@@ -1,0 +1,4 @@
+# Redirections permanentes des deux anciennes pages provisoires (12/10/2026).
+RewriteEngine On
+RewriteRule ^reproducteurs(/.*)?$ https://arche-negadis.fr/etalons-miniatures/ [R=301,L]
+RewriteRule ^braque-weimar(/.*)?$ https://braque-de-weimar-herault.fr/ [R=301,L]
