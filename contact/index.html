@@ -156,26 +156,31 @@
         <span class="eyebrow">Formulaire de Contact</span>
         <h2 style="margin-bottom:2.5rem">Votre message</h2>
 
-        <form class="contact-form" novalidate>
+        <form class="contact-form" action="/contact/envoi.php" method="post" novalidate>
+          <!-- Champ piège anti-spam : hors écran, à laisser vide. Un envoi qui le remplit est refusé par envoi.php. -->
+          <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
+            <label for="site_web">Ne remplissez pas ce champ</label>
+            <input type="text" id="site_web" name="site_web" tabindex="-1" autocomplete="off">
+          </div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 2rem">
             <div class="form-group">
               <label class="form-label" for="prenom">Prénom</label>
-              <input type="text" id="prenom" name="prenom" class="form-input" placeholder="Votre prénom" required autocomplete="given-name">
+              <input type="text" id="prenom" name="prenom" class="form-input" placeholder="Votre prénom" required maxlength="80" autocomplete="given-name">
             </div>
             <div class="form-group">
               <label class="form-label" for="nom">Nom</label>
-              <input type="text" id="nom" name="nom" class="form-input" placeholder="Votre nom" required autocomplete="family-name">
+              <input type="text" id="nom" name="nom" class="form-input" placeholder="Votre nom" required maxlength="80" autocomplete="family-name">
             </div>
           </div>
 
           <div class="form-group">
             <label class="form-label" for="email">Email</label>
-            <input type="email" id="email" name="email" class="form-input" placeholder="votre@email.fr" required autocomplete="email">
+            <input type="email" id="email" name="email" class="form-input" placeholder="votre@email.fr" required maxlength="254" autocomplete="email">
           </div>
 
           <div class="form-group">
             <label class="form-label" for="telephone">Téléphone (optionnel)</label>
-            <input type="tel" id="telephone" name="telephone" class="form-input" placeholder="06 XX XX XX XX" autocomplete="tel">
+            <input type="tel" id="telephone" name="telephone" class="form-input" placeholder="06 XX XX XX XX" maxlength="30" autocomplete="tel">
           </div>
 
           <div class="form-group">
@@ -193,7 +198,7 @@
 
           <div class="form-group">
             <label class="form-label" for="message">Votre message</label>
-            <textarea id="message" name="message" class="form-textarea" placeholder="Décrivez votre projet, vos questions, ou l'objet de votre demande…" required></textarea>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Décrivez votre projet, vos questions, ou l'objet de votre demande…" required maxlength="5000"></textarea>
           </div>
 
           <div style="margin-bottom:2rem">
@@ -206,6 +211,7 @@
           <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center">
             <i class="fa-solid fa-paper-plane"></i> Envoyer mon message
           </button>
+          <p class="form-status" role="status" aria-live="polite" hidden style="margin:1.25rem 0 0;font-size:.9rem;line-height:1.6"></p>
         </form>
       </div>
     </div>
@@ -231,5 +237,5 @@
   Site conçu et référencé par <a href="https://fiducia-ia.com" rel="nofollow noopener" style="color:#6ea8ff;text-decoration:underline">Fiducia&nbsp;IA</a> &mdash; création de site &amp; référencement
 </p>
 </footer>
-<script src="../assets/script.js?v=20261012"></script>
+<script src="../assets/script.js?v=20261012b"></script>
 </body></html>

@@ -169,15 +169,41 @@ document.addEventListener('DOMContentLoaded', () => {
     thumbs[0]?.classList.add('active');
   }
 
-  /* ---- Contact form (basic) ---- */
+  /* ---- Contact form : envoi réel vers contact/envoi.php ----
+     « Message envoyé » ne s'affiche que si le serveur confirme l'envoi ; sinon, une erreur. */
   const form = document.querySelector('.contact-form');
   if (form) {
+    const btn = form.querySelector('[type=submit]');
+    const btnLabel = btn.innerHTML;
+    const status = form.querySelector('.form-status');
+    const fallback = "Votre message n'a pas pu être envoyé. Réessayez dans un instant, ou contactez-nous par téléphone, WhatsApp ou e-mail.";
+    const showStatus = (text, ok) => {
+      if (!status) return;
+      status.textContent = text;
+      status.style.color = ok ? 'var(--gold)' : '#ff9d8a';
+      status.hidden = false;
+    };
     form.addEventListener('submit', e => {
       e.preventDefault();
-      const btn = form.querySelector('[type=submit]');
-      btn.textContent = 'Message envoyé ✓';
+      if (!form.checkValidity()) { form.reportValidity(); return; }
       btn.disabled = true;
       btn.style.opacity = '.7';
+      btn.textContent = 'Envoi en cours…';
+      if (status) status.hidden = true;
+      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+        .then(res => res.json().then(data => ({ sent: res.ok && data.ok === true, data })))
+        .then(({ sent, data }) => {
+          if (!sent) throw new Error(data.message || fallback);
+          btn.textContent = 'Message envoyé ✓';
+          showStatus(data.message || 'Votre message a bien été envoyé.', true);
+          form.reset();
+        })
+        .catch(err => {
+          btn.disabled = false;
+          btn.style.opacity = '';
+          btn.innerHTML = btnLabel;
+          showStatus(err instanceof SyntaxError || err instanceof TypeError ? fallback : err.message, false);
+        });
     });
   }
 
