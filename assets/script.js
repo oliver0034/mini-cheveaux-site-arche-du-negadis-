@@ -261,3 +261,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/* Bulle WhatsApp, bandeau de consentement et mesure d'audience (12/10/2026) :
+   le code vit dans assets/contact-mesure.js ; il est chargé d'ici pour couvrir toutes
+   les pages sans modifier leur HTML. */
+(function () {
+  if (document.querySelector('script[data-contact-mesure]')) return;
+  var s = document.createElement('script');
+  s.src = '/assets/contact-mesure.js?v=20261012'; s.defer = true; s.setAttribute('data-contact-mesure', '');
+  document.head.appendChild(s);
+})();
