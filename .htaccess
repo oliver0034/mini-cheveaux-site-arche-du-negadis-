@@ -3,6 +3,14 @@ RewriteEngine On
 RewriteRule ^reproducteurs(/.*)?$ https://arche-negadis.fr/etalons-miniatures/ [R=301,L]
 RewriteRule ^braque-weimar(/.*)?$ https://braque-de-weimar-herault.fr/ [R=301,L]
 
+# Ancienne structure /pages/<slug>.html, abandonnée le 12/10/2026 au profit des
+# dossiers /<slug>/. Les URL restées dans les index, les liens externes et le
+# llms.txt renvoyaient un 404 : on les récupère par une redirection permanente.
+# Ajouté le 06/11/2026.
+RewriteRule ^pages/index\.html$ https://arche-negadis.fr/ [R=301,L]
+RewriteRule ^pages/([a-z0-9-]+)\.html$ https://arche-negadis.fr/$1/ [R=301,L]
+RewriteRule ^pages/?$ https://arche-negadis.fr/ [R=301,L]
+
 # www vers le domaine nu (12/10/2026) : une seule adresse, https://arche-negadis.fr/.
 RewriteCond %{HTTP_HOST} ^www\.arche-negadis\.fr$ [NC]
 RewriteRule ^ https://arche-negadis.fr%{REQUEST_URI} [R=301,L]

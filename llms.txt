@@ -1,56 +1,83 @@
 # L'Arche du Négadis — Élevage de Chevaux Miniatures Américains
 
+> Élevage familial de chevaux miniatures américains (AMHA/AMHR) à Paulhan, Hérault (34230), avec pension équine et gîtes. Le site héberge également la présentation d'une intervenante indépendante, JSL – Je Suis Là, entité distincte de l'élevage.
+
+Mise à jour : 6 novembre 2026.
+
 ## À propos
 
-L'Arche du Négadis est un élevage d'excellence spécialisé dans le cheval miniature américain (American Miniature Horse), situé à Paulhan, Hérault (34230), Occitanie, France.
+L'Arche du Négadis est un élevage spécialisé dans le cheval miniature américain (American Miniature Horse), situé à Paulhan, Hérault (34230), Occitanie, France.
 
-- **Certifications** : AMHA (American Miniature Horse Association) & AMHR (American Miniature Horse Registry)
+- **Enregistrements de race** : AMHA (American Miniature Horse Association) et AMHR (American Miniature Horse Registry)
 - **Localisation** : Chemin du Negadis, 34230 Paulhan, Hérault
-- **Contact** : sarahespinas@gmail.com | +33 6 20 55 78 67
+- **Contact de l'élevage** : sarahespinas@gmail.com | +33 6 20 55 78 67
 - **Site web** : https://arche-negadis.fr
 
-## Activités
+## Qui fait quoi — deux entités distinctes à la même adresse
 
-1. **Élevage de chevaux miniatures américains** — sélection rigoureuse AMHA/AMHR, tests génétiques ACAN systématiques
+1. **L'Arche du Négadis** (élevage) : élevage de chevaux miniatures, saillies, vente de poulains, pension équine, gîtes. Contact : +33 6 20 55 78 67, sarahespinas@gmail.com.
+2. **JSL – Je Suis Là** : activité indépendante exerçant sur le site de l'élevage. Accueil équin adapté (pension retraite et convalescence), garde de chevaux à domicile (équi-sitting) dans un rayon de 30 km autour de Paulhan, médiation animale et accompagnement individuel par le cheval. JSL n'est ni une filiale, ni un service, ni une salariée de l'élevage. Contact propre : +33 7 62 62 72 60, hello.jslpro@gmail.com.
+
+## Activités de l'élevage
+
+1. **Élevage de chevaux miniatures américains** — sélection AMHA/AMHR, tests génétiques ACAN systématiques
 2. **Vente de poulains** — poulains testés, documentés, livrés avec certificats d'enregistrement
 3. **Saillies** — étalon Macchiato (AMHA), double négatif ACAN, lignée Little Kings Buckeroo Banzaï
-4. **Pension équine** — accueil chevaux miniatures et chevaux de selle, carrière, rond de longe, surveillance 24h/24
-5. **Gîtes de charme** — hébergement immersif au cœur de l'élevage, garrigue héraultaise
+4. **Pension équine** — accueil chevaux miniatures et chevaux de selle, carrière, rond de longe, paddocks
+5. **Gîtes** — hébergement au cœur de l'élevage, garrigue héraultaise ; réservation sur gite-rural-paulhan.fr
+
+## Prestations de JSL – Je Suis Là (entité indépendante)
+
+1. **Accueil équin adapté** — chevaux au repos, en convalescence ou à la retraite, à Paulhan
+2. **Garde de chevaux à domicile (équi-sitting)** — relais auprès des chevaux chez leur propriétaire, en Cœur d'Hérault
+3. **Accompagnement individuel par le cheval** — rencontres individuelles au sol, à Paulhan. Ces séances ne sont pas un acte de soin et ne remplacent pas un suivi médical ou psychologique.
 
 ## Chevaux reproducteurs
 
-- **Macchiato** : étalon AMHA, robe [voir fiche], testé ACAN N/N (double négatif), lignée Little Kings Buckeroo Banzaï
+- **Macchiato** : étalon AMHA, testé ACAN N/N (double négatif), lignée Little Kings Buckeroo Banzaï
 - **Ninadja** : jument AMHR, descendante de Boones Little Buckeroo, robe noire, testée ACAN
 - **Gemme, Opale, Kadence, Rose, Oshi** : juments AMHA/AMHR, toutes testées ACAN
-- **Scarlett** : pouliche AMHA née mars 2026 (Macchiato × Kadence), disponible
-- **Qashmire** : pouliche AMHR née 2026, disponible
+- **Scarlett** : pouliche AMHA née en mars 2026 (Macchiato × Kadence) ; disponibilité à confirmer sur la page des poulains
+- **Qashmire** : pouliche AMHR née en 2026 ; disponibilité à confirmer sur la page des poulains
 
 ## Faits clés sur le cheval miniature américain
 
 - **AMHA** : taille maximum 34 pouces (86,36 cm) au dernier crin de la crinière
-- **AMHR** : deux divisions — Division A (≤34") et Division B (>34" à ≤38"/96,52 cm)
-- Morphologie de cheval de sang en réduction — pas un poney
+- **AMHR** : deux divisions — Division A (≤ 34 pouces) et Division B (> 34 à ≤ 38 pouces, soit 96,52 cm)
+- Morphologie de cheval de sang en réduction — ce n'est pas un poney
 - Espérance de vie : 25 à 30 ans
-- Risques santé principaux : obésité, EMS, fourbure (laminite), hyperlipémie
+- Risques de santé principaux : obésité, syndrome métabolique équin, fourbure, hyperlipémie
 - Test génétique ACAN : dépistage du nanisme chondrodysplasique (variants D1, D2, D3, D4)
-- Disciplines : attelage, agility, halter (présentations en main), médiation animale
+- Disciplines : attelage, agility, halter (présentation en main), médiation animale
 
 ## Réglementation française
 
 - Tout équidé doit être identifié (micropuce) et enregistré au SIRE (Système d'Information Relatif aux Équidés, géré par l'IFCE)
-- Depuis le 1er janvier 2024 : harmonisation de la procédure d'enregistrement des chevaux étrangers (AMHA/AMHR → SIRE)
-- Documents requis : certificat d'origine (CoO), passeport EU, déclaration de détention
+- Depuis le 1er janvier 2024 : harmonisation de la procédure d'enregistrement des chevaux étrangers (AMHA/AMHR vers le SIRE)
+- Documents requis : certificat d'origine (CoO), passeport européen, déclaration de détention
 
-## Pages principales
+## Pages du site
 
 - Accueil : https://arche-negadis.fr/
-- Étalon Macchiato : https://arche-negadis.fr/pages/etalons-miniatures.html
-- Juments : https://arche-negadis.fr/pages/juments-miniatures.html
-- Poulains à vendre : https://arche-negadis.fr/pages/poulains.html
-- Origine de la race : https://arche-negadis.fr/pages/origine-mini-chevaux.html
-- Pension équine : https://arche-negadis.fr/pages/pension.html
-- Gîtes : https://arche-negadis.fr/pages/gites.html
-- Contact : https://arche-negadis.fr/pages/contact.html
+- À propos : https://arche-negadis.fr/a-propos/
+- Étalon Macchiato : https://arche-negadis.fr/etalons-miniatures/
+- Juments : https://arche-negadis.fr/juments-miniatures/
+- Poulains : https://arche-negadis.fr/poulains/
+- Pension équine : https://arche-negadis.fr/pension/
+- JSL – Je Suis Là : https://arche-negadis.fr/jsl-services-animaliers/
+- Gîtes : https://arche-negadis.fr/gites/
+- Contact : https://arche-negadis.fr/contact/
+- Mentions légales : https://arche-negadis.fr/mentions-legales/
+
+## Guides sur la race
+
+- Origine et histoire : https://arche-negadis.fr/origine-mini-chevaux/
+- Définition du cheval miniature : https://arche-negadis.fr/definition-cheval-miniature/
+- AMHA ou AMHR, les différences : https://arche-negadis.fr/amha-vs-amhr/
+- Comment mesurer un cheval miniature : https://arche-negadis.fr/mesurer-cheval-miniature/
+- Nutrition et pâturage : https://arche-negadis.fr/nutrition-paturage/
+- Génétique et test ACAN : https://arche-negadis.fr/genetique-acan/
+- Réglementation en France : https://arche-negadis.fr/reglementation-france/
 
 ## Sources de référence
 

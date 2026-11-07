@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!--
+  ÉTAT AU 07/11/2026 — réponses de JSL intégrées.
+
+  OBTENU ET POSÉ : statut (entreprise individuelle, régime micro-entrepreneur),
+  SIRET, rayon de 30 km autour de Paulhan pour les prestations à domicile, lieu
+  des séances (à l'Arche du Négadis), vocabulaire autorisé par l'intervenante
+  pour la troisième prestation (médiation animale, équithérapie).
+
+  VISUELS DES TROIS PRESTATIONS : images de registre, produites le 07/11/2026
+  par GPT Image (ChatGPT). Elles ne montrent ni le domaine, ni les chevaux de
+  l'élevage, ni JSL : ce sont des images d'ambiance, sans lieu ni visage
+  identifiable, choisies pour cette raison. Sources PNG conservées dans
+  ../../jsl-je-suis-la/visuels-sources/. Ne pas les légender comme des photos
+  de l'Arche du Négadis. Elles se remplacent par de vraies photos du domaine
+  dès qu'il en existe de cette tenue.
+
+  RESTE À OBTENIR AVANT PUBLICATION :
+   1. Les TARIFS des trois prestations (« à partir de » + unité). JSL annonce
+      un site public lundi : y reprendre les prix et lier le site.
+   2. Le NOM DE FAMILLE de l'intervenante — seul le prénom est connu, et le
+      registre des entreprises la déclare non diffusible.
+
+  EN ATTENTE, NE PAS REMETTRE SANS ACCORD ÉCRIT DE JSL :
+   · Transport de chiens et de chats : autorisations en cours de validation.
+     La section #transport et son nœud Service JSON-LD sont conservés en
+     commentaire plus bas dans ce fichier, prêts à être réactivés tels quels.
+   · Le flyer JSL a été retiré de la page : l'image annonce les quatre
+     prestations, transport compris.
+
+  SIRET NON AFFICHÉ, décision du 07/11/2026. Le numéro communiqué par JSL
+  (48856897300025) est actif — entreprise individuelle, APE 96.09Z, créée le
+  13/02/2006 — mais son établissement est enregistré à Lanneuffret, dans le
+  Finistère, pas à Paulhan (vérifié sur recherche-entreprises.api.gouv.fr).
+  Affiché tel quel, il se contredirait en un clic sur annuaire-entreprises.fr,
+  sur une page publiée par l'élevage. Il n'apporte par ailleurs rien : la page
+  n'est pas le site de JSL, aucune obligation d'identification ne pèse donc ici
+  sur elle, et la forme juridique seule suffit à dire que l'activité est
+  professionnelle et facturée. À remettre dès qu'elle confirme le numéro de son
+  établissement de Paulhan.
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JSL Paulhan — Pension retraite chevaux &amp; médiation animale (34)</title>
+<meta name="description" content="Pension retraite et convalescence pour chevaux, garde de chevaux à domicile et médiation animale à Paulhan (34). JSL – Je Suis Là, à l'Arche du Négadis.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://arche-negadis.fr/jsl-services-animaliers/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="JSL – Je Suis Là : pension retraite chevaux et médiation animale à Paulhan">
+<meta property="og:description" content="Pension retraite et convalescence pour chevaux, garde de chevaux à domicile et médiation animale, à Paulhan et dans un rayon de 30 km.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://arche-negadis.fr/jsl-services-animaliers/">
+<meta property="og:image" content="https://arche-negadis.fr/assets/images/jsl-og-cheval-paulhan.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="JSL – Je Suis Là : pension retraite chevaux et médiation animale à Paulhan">
+<meta name="twitter:description" content="Pension retraite chevaux, garde de chevaux à domicile et médiation animale à Paulhan, Cœur d'Hérault.">
+<meta name="twitter:image" content="https://arche-negadis.fr/assets/images/jsl-og-cheval-paulhan.webp">
+
+<!-- Schema.org — deux entités distinctes : l'élevage (hôte) et JSL (prestataire) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://arche-negadis.fr/#organization",
+      "name": "L'Arche du Négadis",
+      "url": "https://arche-negadis.fr/",
+      "telephone": "+33620557867",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chemin du Negadis",
+        "addressLocality": "Paulhan",
+        "postalCode": "34230",
+        "addressRegion": "Hérault",
+        "addressCountry": "FR"
+      }
+    },
+    {
+      "@type": "Place",
+      "@id": "https://arche-negadis.fr/#lieu",
+      "name": "L'Arche du Négadis",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chemin du Negadis",
+        "addressLocality": "Paulhan",
+        "postalCode": "34230",
+        "addressRegion": "Hérault",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "43.5386",
+        "longitude": "3.4567"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://arche-negadis.fr/jsl-services-animaliers/#jsl",
+      "name": "JSL – Je Suis Là",
+      "alternateName": "Je Suis Là",
+      "description": "Activité indépendante de services aux animaux et à leurs propriétaires, exercée à Paulhan (Hérault) et dans un rayon de 30 km : accueil de chevaux au repos ou en convalescence, garde de chevaux à domicile, médiation animale et accompagnement individuel par le cheval.",
+      "disambiguatingDescription": "JSL – Je Suis Là est une entité distincte de l'élevage L'Arche du Négadis. Elle exerce son activité sur le site de l'élevage, qui l'héberge, mais n'en est ni une filiale, ni un service, ni une salariée. Chaque entité répond à ses propres coordonnées.",
+      "url": "https://arche-negadis.fr/jsl-services-animaliers/",
+      "founder": {"@type": "Person", "name": "Magali"},
+      "telephone": "+33762627260",
+      "email": "hello.jslpro@gmail.com",
+      "image": "https://arche-negadis.fr/assets/images/jsl-og-cheval-paulhan.webp",
+      "logo": "https://arche-negadis.fr/assets/images/jsl-logo.svg",
+      "sameAs": ["https://www.facebook.com/profile.php?id=61594873115087"],
+      "location": {
+        "@type": "Place",
+        "name": "L'Arche du Négadis (lieu d'exercice)",
+        "containedInPlace": {"@id": "https://arche-negadis.fr/#lieu"},
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Chemin du Negadis",
+          "addressLocality": "Paulhan",
+          "postalCode": "34230",
+          "addressRegion": "Hérault",
+          "addressCountry": "FR"
+        }
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Paulhan"},
+        {"@type": "City", "name": "Clermont-l'Hérault"},
+        {"@type": "City", "name": "Pézenas"},
+        {"@type": "City", "name": "Lodève"},
+        {"@type": "City", "name": "Gignac"},
+        {"@type": "AdministrativeArea", "name": "Cœur d'Hérault"}
+      ],
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {"@type": "GeoCoordinates", "latitude": "43.5386", "longitude": "3.4567"},
+        "geoRadius": "30000"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://arche-negadis.fr/jsl-services-animaliers/#accueil-equin",
+      "name": "Pension retraite et convalescence pour chevaux",
+      "serviceType": "Accueil de chevaux au repos, en convalescence ou à la retraite",
+      "description": "JSL – Je Suis Là accueille à Paulhan (Hérault) des chevaux qui demandent un quotidien adapté : repos après un effort, convalescence après une blessure ou une opération, retraite. Les soins et le rythme de la journée sont réglés sur l'état de l'animal.",
+      "provider": {"@id": "https://arche-negadis.fr/jsl-services-animaliers/#jsl"},
+      "areaServed": {"@type": "AdministrativeArea", "name": "Hérault"}
+    },
+    {
+      "@type": "Service",
+      "@id": "https://arche-negadis.fr/jsl-services-animaliers/#garde-chevaux",
+      "name": "Garde de chevaux à domicile (équi-sitting)",
+      "serviceType": "Garde et soins de chevaux au domicile du propriétaire",
+      "description": "Pendant une absence, un déplacement ou un imprévu, JSL – Je Suis Là prend le relais auprès des chevaux chez leur propriétaire, dans leur environnement habituel : alimentation, eau, surveillance, soins convenus à l'avance. Secteur de proximité : 30 km autour de Paulhan.",
+      "provider": {"@id": "https://arche-negadis.fr/jsl-services-animaliers/#jsl"},
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {"@type": "GeoCoordinates", "latitude": "43.5386", "longitude": "3.4567"},
+        "geoRadius": "30000"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://arche-negadis.fr/jsl-services-animaliers/#accompagnement",
+      "name": "Médiation animale et accompagnement par le cheval",
+      "alternateName": "Équithérapie",
+      "serviceType": "Séances individuelles de médiation animale avec le cheval",
+      "description": "Des rencontres individuelles avec le cheval, à l'Arche du Négadis à Paulhan, pour prendre du recul et traverser un moment de vie, au rythme de chacun. Cette pratique est aussi appelée médiation animale ou équithérapie. Ces séances ne sont pas un soin et ne remplacent pas un suivi médical ou psychologique.",
+      "provider": {"@id": "https://arche-negadis.fr/jsl-services-animaliers/#jsl"},
+      "areaServed": {"@type": "City", "name": "Paulhan"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Accueil","item":"https://arche-negadis.fr/"},
+        {"@type":"ListItem","position":2,"name":"JSL – Je Suis Là","item":"https://arche-negadis.fr/jsl-services-animaliers/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "JSL fait-elle partie de l'Arche du Négadis ?",
+          "acceptedAnswer": {"@type":"Answer","text":"Non. JSL – Je Suis Là est une activité indépendante, qui exerce sur le site de l'Arche du Négadis à Paulhan. L'élevage met ses installations à disposition ; il ne rend pas ces prestations et ne les facture pas. Les demandes se font directement auprès de JSL, au 07 62 62 72 60."}
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle différence entre la pension de l'Arche du Négadis et l'accueil équin adapté de JSL ?",
+          "acceptedAnswer": {"@type":"Answer","text":"La pension de l'élevage héberge durablement des chevaux en bonne santé, avec carrière, rond de longe et paddocks. L'accueil équin adapté de JSL s'adresse à un cheval qui demande une attention particulière sur une période donnée : repos, convalescence, fin de carrière. Les deux se trouvent à la même adresse mais relèvent de deux interlocutrices différentes."}
+        },
+        {
+          "@type": "Question",
+          "name": "Dans quelles communes JSL se déplace-t-elle ?",
+          "acceptedAnswer": {"@type":"Answer","text":"Pour les prestations à domicile, le secteur de proximité de JSL couvre un rayon de 30 km autour de Paulhan (34230). Il comprend notamment Clermont-l'Hérault, Pézenas, Gignac, Lodève, Aspiran, Canet et Saint-Pons-de-Mauchiens. Au-delà, le déplacement se décide au cas par cas. L'accueil équin et les séances de médiation animale, eux, se déroulent à l'Arche du Négadis, à Paulhan."}
+        },
+        {
+          "@type": "Question",
+          "name": "JSL est-elle une association qui recueille gratuitement des chevaux ?",
+          "acceptedAnswer": {"@type":"Answer","text":"Non. JSL – Je Suis Là est une activité professionnelle, facturée. Elle n'est pas une association de retraite gratuite et ne reprend pas de chevaux à titre gracieux. Les propriétaires qui cherchent à placer un cheval sans frais doivent se tourner vers les associations spécialisées."}
+        },
+        {
+          "@type": "Question",
+          "name": "La médiation animale est-elle une thérapie ?",
+          "acceptedAnswer": {"@type":"Answer","text":"Non. La médiation animale, parfois appelée équithérapie, désigne des rencontres individuelles avec le cheval, pour prendre du recul à son rythme. Ces séances ne sont ni un acte de soin ni une prise en charge médicale, et ne remplacent pas un suivi par un professionnel de santé."}
+        },
+        {
+          "@type": "Question",
+          "name": "Comment joindre JSL ?",
+          "acceptedAnswer": {"@type":"Answer","text":"Par téléphone au 07 62 62 72 60 ou par courriel à hello.jslpro@gmail.com. Ces coordonnées sont celles de JSL – Je Suis Là, distinctes de celles de l'Arche du Négadis."}
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="../assets/styles.css">
+<style>
+/* ── Titre du hero ──
+   assets/script.js découpe le H1 en spans inline-block, un par mot : chaque
+   mot crée une occasion de coupure. Ni un espace insécable ni text-wrap:balance
+   ne la suppriment (tous deux mesurés sans effet le 06/11/2026) : les lignes
+   du H1 sont donc découpées à la main par des <br>. ── */
+
+/* ── Encart partenaire : inversion tonale assumée ──
+   Le logo JSL est noir sur fond ivoire. Plutôt que de le recolorer — ce que
+   son mode d'emploi interdit — on inverse la surface : un bloc ivoire posé
+   sur le fond ink du site, comme une feuille de papier sur la table. ── */
+.jsl-card {
+  background: #f8f5ec;
+  border-radius: 1rem;
+  padding: 2.75rem 2.25rem;
+  text-align: center;
+  box-shadow: 0 24px 60px rgba(0,0,0,.45);
+}
+.jsl-card img { width: 220px; max-width: 70%; height: auto; display: block; margin: 0 auto 1.5rem; }
+.jsl-card .jsl-claim {
+  font-family: 'Noto Serif', Georgia, serif;
+  font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+  line-height: 1.35;
+  color: #1a1a1a;
+  margin: 0 0 .65rem;
+}
+.jsl-card .jsl-sub { font-size: .95rem; color: #6b6354; margin: 0; letter-spacing: .01em; }
+
+.jsl-split { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
+@media (max-width: 860px) { .jsl-split { grid-template-columns: 1fr; gap: 2.25rem; } }
+
+.jsl-note {
+  border-left: 2px solid rgba(242,202,80,.35);
+  padding: 1rem 0 1rem 1.5rem;
+  margin: 2.5rem 0 0;
+  font-size: .95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+.jsl-note strong { color: var(--text-primary); font-weight: 500; }
+
+.jsl-contact-row { display: flex; flex-wrap: wrap; gap: 1rem 2.5rem; justify-content: center; margin-top: 1.75rem; }
+.jsl-contact-row a { color: var(--gold); text-decoration: none; font-size: 1.1rem; }
+.jsl-contact-row a:hover { text-decoration: underline; }
+.jsl-contact-row i { margin-right: .55rem; opacity: .7; }
+
+.jsl-compare { width: 100%; border-collapse: collapse; margin-top: 2rem; font-size: .96rem; }
+.jsl-compare th, .jsl-compare td { padding: .95rem 1.1rem; text-align: left; vertical-align: top; }
+.jsl-compare thead th { font-family: 'Noto Serif', Georgia, serif; color: var(--text-headline); font-weight: 400; font-size: 1.05rem; }
+.jsl-compare tbody tr { background: var(--surface-mid); }
+.jsl-compare tbody tr:nth-child(even) { background: var(--surface-low); }
+.jsl-compare td:first-child { color: var(--text-secondary); white-space: nowrap; }
+
+/* Sous 720 px, trois colonnes de texte deviennent illisibles : le tableau
+   se replie en blocs empilés, chaque valeur précédée de sa colonne. */
+@media (max-width: 720px) {
+  .jsl-compare thead { display: none; }
+  .jsl-compare, .jsl-compare tbody, .jsl-compare tr, .jsl-compare td { display: block; width: 100%; }
+  .jsl-compare tbody tr,
+  .jsl-compare tbody tr:nth-child(even) {
+    background: var(--surface-mid);
+    border-radius: .65rem;
+    padding: 1.15rem 1.25rem;
+    margin-bottom: .85rem;
+  }
+  .jsl-compare td { padding: 0; }
+  .jsl-compare td:first-child {
+    color: var(--gold);
+    white-space: normal;
+    font-size: .74rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: .6rem;
+  }
+  .jsl-compare td[data-label] { padding: .3rem 0; }
+  .jsl-compare td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    color: var(--text-secondary);
+    font-size: .78rem;
+    margin-bottom: .1rem;
+  }
+}
+
+.jsl-choix { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2.25rem; }
+
+.jsl-photo { display: block; width: 100%; height: auto; border-radius: .75rem; }
+
+/* ── Prestations : deux colonnes, côté alterné ──
+   La charte demande l'asymétrie assumée et refuse les filets : l'image et le
+   texte se partagent la ligne en parts inégales, et le visuel change de côté
+   d'une prestation à l'autre. Les visuels ont des bords volontairement très
+   sombres, qui se fondent dans le fond de section — c'est la « no-line rule »
+   appliquée à l'image : aucun cadre, la limite se fait par le ton. ── */
+.jsl-presta { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 3.25rem; align-items: center; }
+.jsl-presta + .jsl-presta { margin-top: 4.5rem; }
+.jsl-presta-visuel { margin: 0; }
+.jsl-presta-visuel img { display: block; width: 100%; height: auto; border-radius: .75rem; }
+.jsl-presta--inverse { grid-template-columns: 1.05fr 0.95fr; }
+.jsl-presta--inverse .jsl-presta-visuel { order: 2; }
+.jsl-presta-texte > :first-child { margin-top: 0; }
+@media (max-width: 860px) {
+  .jsl-presta { grid-template-columns: 1fr; gap: 1.9rem; }
+  .jsl-presta + .jsl-presta { margin-top: 3.5rem; }
+  .jsl-presta--inverse .jsl-presta-visuel { order: 0; }
+}
+.jsl-photo-legende { font-size: .85rem; color: var(--text-secondary); margin: .9rem 0 0; text-align: center; }
+
+/* ── Photo du hero ──
+   Le cliché de JSL est au format portrait et les deux visages se tiennent
+   autour de 40 % de sa hauteur. Le cadrage par défaut du site (center 22 %)
+   montrerait la toiture de l'abri : on le reprend ici. ── */
+.hero-page .hero-bg img { object-position: 55% 38%; }
+
+/* ── Taille du titre sous 560 px ──
+   Le site fige le H1 des pages intérieures à 2 rem en dessous de 762 px.
+   Mesuré le 07/11/2026 : à 375 px, « Pension retraite chevaux » demande
+   346 px pour 327 px disponibles — le mot « chevaux » tombait seul sur sa
+   ligne. On rend la taille proportionnelle à la largeur, bornée à la valeur
+   du site pour que rien ne bouge au raccord. ── */
+@media (max-width: 560px) {
+  .hero.hero-page h1 { font-size: clamp(1.45rem, calc(8.6vw - 4px), 2rem); }
+}
+
+/* ── Bandeau du contact ──
+   Même photo, recadrée serrée et très voilée : elle doit se sentir, pas se
+   regarder. Le dégradé ramène le fond ink en haut et en bas pour que la
+   section reste cousue aux deux qui l'encadrent. ── */
+#contact-jsl { position: relative; overflow: hidden; }
+#contact-jsl .jsl-fond, #contact-jsl .jsl-fond-voile { position: absolute; inset: 0; }
+#contact-jsl .jsl-fond img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 60%;
+  opacity: .20; filter: grayscale(1);
+}
+#contact-jsl .jsl-fond-voile {
+  background: linear-gradient(180deg, var(--surface) 0%, rgba(19,19,19,.45) 50%, var(--surface) 100%);
+}
+#contact-jsl > .container { position: relative; z-index: 1; }
+
+.jsl-updated { font-size: .85rem; color: var(--text-secondary); text-align: center; margin-top: 3rem; }
+
+/* ── Rythme vertical de la page — 07/11/2026 ──
+   Mesuré avant correction, à 1440 px : 224 px de blanc au raccord de deux
+   sections (7 rem de padding de chaque côté), et 216 px entre deux prestations
+   À L'INTÉRIEUR de la section « Trois prestations » — chaque bloc portait
+   .section-sm (4,5 rem de padding haut ET bas) EN PLUS d'un margin-top de
+   4,5 rem, soit trois espaces empilés. Les deux sauts étaient donc de même
+   ampleur : plus rien ne disait au lecteur où une section finissait et où la
+   suivante commençait, et la page se lisait comme une suite de blocs flottants.
+
+   Corrigé en deux temps : le raccord de section passe à la moitié (112 px),
+   et l'empilement des prestations est supprimé au profit d'un seul écart de
+   56 px. Le saut de section vaut désormais le double du saut de prestation,
+   ce qui rend la hiérarchie lisible sans ajouter un seul filet.
+
+   Le resserrement du raccord a été porté dans assets/styles.css le même jour,
+   pour les 18 pages du site : .section passe de 7rem à 3.5rem (2.5rem sous
+   768 px) et .section-sm de 4.5rem à 2.25rem. Ne restent ici que les règles
+   propres aux blocs de prestation, qui n'existent que sur cette page. ── */
+
+/* Les trois blocs de prestation : plus de padding propre, un seul écart.
+   Ils portent .section-sm alors que ce sont des div imbriquées, pas des
+   sections — c'est le seul endroit du site dans ce cas, d'où la remise à zéro
+   du padding : sans elle, le padding de la classe s'additionne à la marge. */
+.jsl-presta.section-sm { padding: 0; }
+.section-header + .jsl-presta { margin-top: 3.5rem; }
+.jsl-presta + .jsl-presta { margin-top: 3.5rem; }
+@media (max-width: 860px) {
+  .section-header + .jsl-presta { margin-top: 2.75rem; }
+  .jsl-presta + .jsl-presta { margin-top: 2.75rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="site-nav">
+  <a href="/" class="nav-brand">
+    <img src="../assets/images/logo.png" alt="Logo L'Arche du Négadis" class="nav-logo">
+    <div class="nav-brand-text"><span class="nav-brand-name">L'Arche du Négadis</span><span class="nav-brand-tag">Élevage d'Excellence · Hérault</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/" class="nav-link">Accueil</a></li>
+    <li><a href="/a-propos/" class="nav-link">À Propos</a></li>
+    <li class="nav-drop">
+      <button class="nav-drop-btn">Nos Miniatures <span class="drop-arrow">▾</span></button>
+      <ul class="drop-menu">
+        <li><a href="/etalons-miniatures/" class="drop-item">Notre Étalon</a></li>
+        <li><a href="/juments-miniatures/" class="drop-item">Nos Juments</a></li>
+        <li><a href="/poulains/" class="drop-item">Nos Poulains</a></li>
+      </ul>
+    </li>
+    <li class="nav-drop"><button class="nav-drop-btn" aria-haspopup="true" aria-expanded="false">La Race <span class="drop-arrow">▾</span></button><ul class="drop-menu" role="list"><li><a href="/origine-mini-chevaux/" class="drop-item">Origine &amp; Histoire</a></li><li><a href="/definition-cheval-miniature/" class="drop-item">Définition</a></li><li><a href="/amha-vs-amhr/" class="drop-item">AMHA vs AMHR</a></li><li><a href="/mesurer-cheval-miniature/" class="drop-item">Comment Mesurer</a></li><li><a href="/nutrition-paturage/" class="drop-item">Nutrition &amp; Pâturage</a></li><li><a href="/genetique-acan/" class="drop-item">Génétique &amp; ACAN</a></li><li><a href="/reglementation-france/" class="drop-item">Réglementation France</a></li></ul></li>
+    <li><a href="/pension/" class="nav-link">Pension</a></li>
+    <li><a href="/jsl-services-animaliers/" class="nav-link active">JSL</a></li>
+    <li><a href="/gites/" class="nav-link">Gîtes</a></li>
+    <li><a href="https://braque-de-weimar-herault.fr/" class="nav-link nav-link-ext" target="_blank" rel="noopener noreferrer">Braque de Weimar <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.6rem"></i></a></li>
+    <li><a href="/contact/" class="nav-link">Contact</a></li>
+  </ul>
+  <div class="nav-review"><a class="review-btn" href="https://g.page/r/CVtRxhphTr_BEAE/review" target="_blank" rel="noopener"><div class="google-logo"><svg width="20" height="20" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"/><path fill="#34A853" d="M6.3 14.7l7 5.1C15 16.1 19.2 13 24 13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2c-7.7 0-14.4 4.9-17.7 12.7z"/><path fill="#FBBC05" d="M24 46c5.6 0 10.5-1.9 14.4-5.1l-6.6-5.4C29.8 37 27 38 24 38c-6.1 0-11.3-4.1-13.1-9.6l-7 5.4C7.4 41.2 15.1 46 24 46z"/><path fill="#EA4335" d="M44.5 20H24v8.5h11.8c-.9 2.8-2.8 5.2-5.4 6.9l6.6 5.4C41.3 37.3 45 31.1 45 24c0-1.3-.2-2.7-.5-4z"/></svg></div><div><div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><div class="review-label">Laisser un avis</div><div class="review-sublabel">sur Google</div></div></a></div>
+  <button class="nav-burger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" role="dialog" aria-label="Menu mobile">
+  <button class="mobile-close" aria-label="Fermer le menu"><i class="fa-solid fa-xmark"></i></button>
+  <a href="/">Accueil</a>
+  <a href="/a-propos/">À Propos</a>
+  <div class="mobile-accordion">
+    <button class="mobile-acc-btn">Nos Miniatures <span class="mobile-acc-arrow">▾</span></button>
+    <div class="mobile-acc-body">
+      <a href="/etalons-miniatures/">Notre Étalon</a>
+      <a href="/juments-miniatures/">Nos Juments</a>
+      <a href="/poulains/">Nos Poulains</a>
+    </div>
+  </div>
+  <div class="mobile-accordion">
+    <button class="mobile-acc-btn">La Race <span class="mobile-acc-arrow">▾</span></button>
+    <div class="mobile-acc-body">
+      <a href="/origine-mini-chevaux/">Origine de la Race</a>
+      <a href="/definition-cheval-miniature/">Définition</a>
+      <a href="/amha-vs-amhr/">AMHA vs AMHR</a>
+      <a href="/mesurer-cheval-miniature/">Comment Mesurer</a>
+      <a href="/nutrition-paturage/">Nutrition &amp; Pâturage</a>
+      <a href="/genetique-acan/">Génétique &amp; ACAN</a>
+      <a href="/reglementation-france/">Réglementation France</a>
+    </div>
+  </div>
+  <a href="/pension/">Pension</a>
+  <a href="/jsl-services-animaliers/">JSL – Je Suis Là</a>
+  <a href="/gites/">Gîtes</a>
+  <a href="https://braque-de-weimar-herault.fr/" target="_blank" rel="noopener noreferrer">Braque de Weimar ↗</a>
+  <a href="/contact/">Contact</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section class="hero hero-page" aria-label="JSL – Je Suis Là à l'Arche du Négadis">
+  <div class="hero-bg" aria-hidden="true">
+    <img src="../assets/images/jsl-accompagnement-cheval-paulhan.webp"
+         alt="Magali, de JSL – Je Suis Là, auprès d'un cheval miniature devant l'abri de l'Arche du Négadis à Paulhan"
+         width="1280" height="1707" loading="eager">
+  </div>
+  <div class="hero-veil" aria-hidden="true"></div>
+  <div class="hero-content">
+    <div class="hero-breadcrumb">
+      <a href="/">Accueil</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>JSL – Je Suis Là</span>
+    </div>
+    <span class="hero-eyebrow">JSL – Je Suis Là · Intervenante indépendante à l'Arche du Négadis</span>
+    <h1>Pension retraite chevaux<br>et médiation animale<br>à Paulhan</h1>
+    <p class="hero-sub">Pension retraite et convalescence pour chevaux, garde de chevaux à domicile dans un rayon de 30 km, séances de médiation animale avec le cheval. Une activité indépendante, hébergée sur le domaine.</p>
+    <div class="hero-cta">
+      <a href="#prestations" class="btn btn-gold">Voir les trois prestations</a>
+      <a href="#contact-jsl" class="btn btn-outline">Joindre JSL</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ QUI ══ -->
+<section class="section" id="qui">
+  <div class="container">
+    <div class="jsl-split">
+      <div data-reveal="left">
+        <span class="eyebrow">Qui est JSL</span>
+        <h2>Être là<br>l'un pour l'autre</h2>
+        <div class="sep sep-left"></div>
+        <p><strong>JSL – Je Suis Là est une activité indépendante, exercée à l'Arche du Négadis, à Paulhan (34230).</strong> L'élevage met ses installations et son cadre à disposition ; les prestations décrites sur cette page sont rendues et facturées par JSL, sous sa seule responsabilité.</p>
+        <p>Derrière JSL, il y a Magali, installée en entreprise individuelle sous le régime micro-entrepreneur. Le métier tient en une idée : prendre le relais auprès d'un animal quand son propriétaire ne peut pas, et accompagner les personnes que le lien à l'animal aide à traverser un moment. La prestation se règle sur le besoin de l'animal, pas sur un forfait standard.</p>
+        <p class="muted">Pour toute question sur l'élevage, les poulains, la pension équine ou les gîtes, c'est <a href="/contact/" class="btn-link">l'Arche du Négadis</a> qu'il faut joindre. Pour les trois prestations ci-dessous, c'est JSL.</p>
+      </div>
+      <div data-reveal="right">
+        <div class="jsl-card">
+          <img src="../assets/images/jsl-logo.svg" alt="JSL – Je Suis Là" width="942" height="656">
+          <p class="jsl-claim">Comptez sur moi.<br>Appuyez-vous sur eux.</p>
+          <p class="jsl-sub">Pour les animaux. Pour le lien qui nous unit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PRESTATIONS ══ -->
+<section class="section bg-low" id="prestations">
+  <div class="container">
+    <div class="section-header text-center" data-reveal>
+      <span class="eyebrow">Trois prestations</span>
+      <h2>Ce que JSL propose<br>en Cœur d'Hérault</h2>
+      <div class="sep"></div>
+    </div>
+
+    <!-- 01 — Accueil équin adapté -->
+    <div class="section-sm jsl-presta" id="accueil-equin">
+      <figure class="jsl-presta-visuel" data-reveal="left">
+        <img src="../assets/images/jsl-pension-retraite-chevaux-repos.webp"
+             alt="Un cheval au repos, couché sur la paille dans la pénombre d'une écurie traversée par un rai de lumière"
+             width="1100" height="734" loading="lazy">
+      </figure>
+      <div class="jsl-presta-texte" data-reveal="right">
+      <h2>Pension retraite chevaux à Paulhan : repos et convalescence</h2>
+      <p><strong>JSL accueille à Paulhan (Hérault) des chevaux qui demandent un quotidien adapté : repos après un effort, convalescence après une blessure ou une opération, retraite.</strong> Le rythme de la journée, l'alimentation et les soins sont réglés sur l'état de l'animal, après un point avec le propriétaire et, s'il y a lieu, avec son vétérinaire.</p>
+      <p>Ce n'est pas une pension classique. Un cheval qui doit rester au calme, qui reprend après une immobilisation ou qui vieillit n'a pas les mêmes besoins qu'un cheval de travail : c'est à ces situations-là que l'accueil adapté répond.</p>
+      <p class="muted">Lieu : à l'Arche du Négadis, Chemin du Negadis, 34230 Paulhan. Tarifs communiqués par JSL au 07 62 62 72 60.</p>
+      </div>
+    </div>
+
+    <!-- 02 — Garde de chevaux à domicile -->
+    <div class="section-sm jsl-presta jsl-presta--inverse" id="garde-chevaux">
+      <figure class="jsl-presta-visuel" data-reveal="right">
+        <img src="../assets/images/jsl-garde-chevaux-domicile-herault.webp"
+             alt="Une main posée à plat sur l'encolure d'un cheval debout dans son pré, à la tombée du jour"
+             width="1100" height="734" loading="lazy">
+      </figure>
+      <div class="jsl-presta-texte" data-reveal="left">
+      <h2>Garde de chevaux à domicile dans l'Hérault</h2>
+      <p><strong>Pendant une absence, un déplacement professionnel ou un imprévu, JSL prend le relais auprès des chevaux chez leur propriétaire, dans leur environnement habituel.</strong> Alimentation, eau, surveillance, sortie et soins convenus à l'avance : le cheval reste chez lui, ses repères ne bougent pas.</p>
+      <p>C'est ce que le métier appelle l'équi-sitting. L'intérêt, par rapport à un déplacement en pension pour quelques jours, est d'éviter à l'animal le stress du transport et du changement de lieu — ce qui compte particulièrement pour un cheval âgé, anxieux ou sous traitement.</p>
+      <p class="muted">Secteur de proximité : 30 km autour de Paulhan. Tarifs communiqués par JSL au 07 62 62 72 60.</p>
+      </div>
+    </div>
+
+    <!-- 03 — Accompagnement par le cheval -->
+    <div class="section-sm jsl-presta" id="accompagnement">
+      <figure class="jsl-presta-visuel" data-reveal="left">
+        <img src="../assets/images/jsl-mediation-animale-cheval-paulhan.webp"
+             alt="Une personne debout au sol, front contre le chanfrein d'un cheval tenu en licol, en silhouette à contre-jour dans un pré au petit matin"
+             width="1100" height="734" loading="lazy">
+      </figure>
+      <div class="jsl-presta-texte" data-reveal="right">
+      <h2>Médiation animale et accompagnement par le cheval à Paulhan</h2>
+      <p><strong>Des rencontres individuelles avec le cheval, à l'Arche du Négadis à Paulhan, pour prendre du recul et traverser un moment de vie, au rythme de chacun.</strong> Une séance se passe au sol, sans monter, dans le calme du domaine ; le cheval ne juge pas et renvoie ce qu'on lui apporte, ce qui suffit souvent à remettre les choses à leur place.</p>
+      <p>Cette pratique porte plusieurs noms selon les milieux : accompagnement par le cheval, médiation animale, parfois équithérapie. Ils désignent ici la même chose, des séances individuelles au contact du cheval.</p>
+      <p><strong>Ces séances ne sont pas un soin.</strong> Elles ne constituent ni un acte médical, ni une psychothérapie, et ne remplacent pas un suivi par un professionnel de santé. Elles s'adressent à qui veut souffler, pas à qui cherche un traitement.</p>
+      <p class="muted">Lieu : à l'Arche du Négadis, Chemin du Negadis, 34230 Paulhan. Tarifs communiqués par JSL au 07 62 62 72 60.</p>
+      </div>
+    </div>
+
+    <!--
+      04 · TRANSPORT DE CHIENS ET DE CHATS · EN RÉSERVE DEPUIS LE 07/11/2026
+      Retiré de la page à la demande de JSL : les autorisations de transport
+      d'animaux vivants sont en cours de validation. À remettre tel quel, avec
+      le nœud JSON-LD qui suit, une fois l'attestation de capacité et la
+      déclaration DDPP obtenues — et pas avant. Le rayon de 30 km et le tarif
+      restent à renseigner.
+
+      <div class="section-sm" id="transport" data-reveal>
+        <h2>Taxi animalier : transport de chiens et de chats depuis Paulhan</h2>
+        <p><strong>Un relais pour conduire un chien ou un chat chez le vétérinaire, au toilettage ou sur un trajet du quotidien, au départ de Paulhan et en Cœur d'Hérault.</strong> Utile quand on n'a pas de véhicule, quand on ne peut pas se libérer, ou quand l'animal voyage mal avec son propriétaire.</p>
+        <p>Chaque trajet se cale sur un horaire convenu, avec une prise en charge au domicile et un retour au même endroit.</p>
+        <p class="muted">Secteur : 30 km autour de Paulhan. Attestation de capacité : à renseigner.</p>
+      </div>
+
+      Nœud à réinsérer dans le @graph, avant le BreadcrumbList :
+      {
+        "@type": "Service",
+        "@id": "https://arche-negadis.fr/jsl-services-animaliers/#transport",
+        "name": "Transport de chiens et de chats (taxi animalier)",
+        "serviceType": "Taxi animalier — transport de chiens et de chats",
+        "description": "Un relais pour conduire un chien ou un chat chez le vétérinaire, au toilettage ou sur un trajet du quotidien, au départ de Paulhan et en Cœur d'Hérault, quand le propriétaire ne peut pas s'en charger.",
+        "provider": {"@id": "https://arche-negadis.fr/jsl-services-animaliers/#jsl"},
+        "areaServed": {"@type": "AdministrativeArea", "name": "Cœur d'Hérault"}
+      },
+    -->
+
+    <div class="jsl-note">
+      <strong>Deux adresses, deux interlocutrices.</strong> Les trois prestations ci-dessus sont rendues par JSL – Je Suis Là. Elles ne sont ni vendues, ni facturées, ni assurées par l'Arche du Négadis, qui héberge l'activité sur son domaine. Chaque entité répond à ses propres coordonnées.
+    </div>
+  </div>
+</section>
+
+<!-- ══ PENSION vs ACCUEIL ══ -->
+<section class="section" id="difference">
+  <div class="container container-sm">
+    <div class="section-header text-center" data-reveal>
+      <span class="eyebrow">Ne pas confondre</span>
+      <h2>Pension de l'élevage<br>ou pension retraite de JSL ?</h2>
+      <div class="sep"></div>
+    </div>
+    <p data-reveal>Les deux se trouvent Chemin du Negadis, à Paulhan. Ce ne sont pas la même offre, et ce n'est pas la même personne qui répond.</p>
+    <table class="jsl-compare" data-reveal>
+      <thead>
+        <tr><th></th><th>Pension de l'Arche du Négadis</th><th>Pension retraite de JSL</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Pour qui</td><td data-label="Pension de l'élevage">Un cheval en bonne santé, hébergé durablement</td><td data-label="Pension retraite de JSL">Un cheval au repos, en convalescence ou en fin de carrière</td></tr>
+        <tr><td>Ce qu'on y trouve</td><td data-label="Pension de l'élevage">Box, paddocks, carrière de travail, rond de longe</td><td data-label="Pension retraite de JSL">Un quotidien réglé sur l'état de l'animal</td></tr>
+        <tr><td>Qui répond</td><td data-label="Pension de l'élevage">L'Arche du Négadis — 06 20 55 78 67</td><td data-label="Pension retraite de JSL">JSL – Je Suis Là — 07 62 62 72 60</td></tr>
+      </tbody>
+    </table>
+    <div class="jsl-choix" data-reveal>
+      <a href="/pension/" class="btn btn-outline">Mon cheval est en forme : voir la pension</a>
+      <a href="#accueil-equin" class="btn btn-gold">Mon cheval a besoin de soins : voir l'accueil adapté</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ZONE ══ -->
+<section class="section bg-low" id="zone">
+  <div class="container">
+    <div class="jsl-split">
+      <div data-reveal="left">
+        <span class="eyebrow">Zone d'intervention</span>
+        <h2>Paulhan<br>et le Cœur d'Hérault</h2>
+        <div class="sep sep-left"></div>
+        <p><strong>Pour les prestations à domicile, le secteur de proximité de JSL couvre un rayon de 30 km autour de Paulhan (34230).</strong> Clermont-l'Hérault est à 10 minutes, Pézenas à 15, Gignac à 15, Lodève à 20. L'A75 passe à proximité.</p>
+        <p>L'accueil équin et les séances de médiation animale, eux, se déroulent à l'Arche du Négadis, à Paulhan. Au-delà des 30 km, un déplacement se décide au cas par cas, selon la prestation et la fréquence.</p>
+        <div class="jsl-contact-row">
+          <span class="geo-tag">Paulhan</span>
+          <span class="geo-tag">Clermont-l'Hérault</span>
+          <span class="geo-tag">Pézenas</span>
+          <span class="geo-tag">Gignac</span>
+          <span class="geo-tag">Lodève</span>
+        </div>
+      </div>
+      <div data-reveal="right">
+        <img class="jsl-photo" src="../assets/images/jsl-accueil-equin-abri.webp"
+             alt="Paddocks et abri de l'Arche du Négadis à Paulhan, où JSL accueille les chevaux au repos ou en convalescence"
+             width="1400" height="1050" loading="lazy">
+        <p class="jsl-photo-legende">Les installations de l'Arche du Négadis, à Paulhan, où JSL exerce.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section class="section" id="contact-jsl">
+  <div class="jsl-fond" aria-hidden="true">
+    <img src="../assets/images/jsl-presence-detail.webp" alt="" width="1200" height="700" loading="lazy">
+  </div>
+  <div class="jsl-fond-voile" aria-hidden="true"></div>
+  <div class="container container-sm">
+    <div class="section-header text-center" data-reveal>
+      <span class="eyebrow">Joindre JSL</span>
+      <h2>Une présence attentive,<br>selon vos besoins</h2>
+      <div class="sep"></div>
+    </div>
+    <p class="text-center" data-reveal>Les demandes concernant les trois prestations se font directement auprès de JSL – Je Suis Là.</p>
+    <div class="jsl-contact-row" data-reveal>
+      <a href="tel:+33762627260"><i class="fa-solid fa-phone"></i>07 62 62 72 60</a>
+      <a href="mailto:hello.jslpro@gmail.com"><i class="fa-solid fa-envelope"></i>hello.jslpro@gmail.com</a>
+      <a href="https://www.facebook.com/profile.php?id=61594873115087" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i>JSL sur Facebook</a>
+    </div>
+    <!-- Le SIRET communiqué par JSL (48856897300025) n'est pas affiché : il est
+         actif, mais son établissement est enregistré à Lanneuffret (Finistère),
+         pas à Paulhan. Vérifié le 07/11/2026 sur recherche-entreprises.api.gouv.fr.
+         À remettre ici et dans le JSON-LD ("identifier" / PropertyValue "SIRET")
+         dès que JSL confirme le numéro de son établissement de Paulhan. -->
+    <div class="jsl-note">
+      <strong>JSL – Je Suis Là</strong> — activité indépendante, entreprise individuelle au régime micro-entrepreneur, exerçant Chemin du Negadis, 34230 Paulhan. L'Arche du Négadis héberge cette activité et n'intervient pas dans son exécution.
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section class="section bg-low" id="faq">
+  <div class="container container-sm">
+    <div class="section-header text-center" data-reveal>
+      <span class="eyebrow">Questions fréquentes</span>
+      <h2>Ce qu'on nous demande<br>le plus souvent</h2>
+      <div class="sep"></div>
+    </div>
+    <div class="faq-accordion" data-reveal>
+      <div class="faq-item">
+        <button class="faq-btn">JSL fait-elle partie de l'Arche du Négadis ?<i class="fa-solid fa-plus faq-icon"></i></button>
+        <div class="faq-body"><div class="faq-body-inner"><p>Non. JSL – Je Suis Là est une activité indépendante, qui exerce sur le site de l'Arche du Négadis à Paulhan. L'élevage met ses installations à disposition ; il ne rend pas ces prestations et ne les facture pas. Les demandes se font directement auprès de JSL, au 07 62 62 72 60.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Quelle différence entre la pension de l'élevage et l'accueil équin adapté de JSL ?<i class="fa-solid fa-plus faq-icon"></i></button>
+        <div class="faq-body"><div class="faq-body-inner"><p>La pension de l'élevage héberge durablement des chevaux en bonne santé, avec carrière, rond de longe et paddocks. L'accueil équin adapté de JSL s'adresse à un cheval qui demande une attention particulière sur une période donnée : repos, convalescence, fin de carrière. Les deux se trouvent à la même adresse mais relèvent de deux interlocutrices différentes.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Dans quelles communes JSL se déplace-t-elle ?<i class="fa-solid fa-plus faq-icon"></i></button>
+        <div class="faq-body"><div class="faq-body-inner"><p>Pour les prestations à domicile, le secteur de proximité de JSL couvre un rayon de 30 km autour de Paulhan (34230). Il comprend notamment Clermont-l'Hérault, Pézenas, Gignac, Lodève, Aspiran, Canet et Saint-Pons-de-Mauchiens. Au-delà, le déplacement se décide au cas par cas. L'accueil équin et les séances de médiation animale, eux, se déroulent à l'Arche du Négadis, à Paulhan.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">JSL est-elle une association qui recueille gratuitement des chevaux ?<i class="fa-solid fa-plus faq-icon"></i></button>
+        <div class="faq-body"><div class="faq-body-inner"><p>Non. JSL – Je Suis Là est une activité professionnelle, facturée. Elle n'est pas une association de retraite gratuite et ne reprend pas de chevaux à titre gracieux. Les propriétaires qui cherchent à placer un cheval sans frais doivent se tourner vers les associations spécialisées.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">La médiation animale est-elle une thérapie ?<i class="fa-solid fa-plus faq-icon"></i></button>
+        <div class="faq-body"><div class="faq-body-inner"><p>Non. La médiation animale, parfois appelée équithérapie, désigne des rencontres individuelles avec le cheval, pour prendre du recul à son rythme. Ces séances ne sont ni un acte de soin ni une prise en charge médicale, et ne remplacent pas un suivi par un professionnel de santé.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">Comment joindre JSL ?<i class="fa-solid fa-plus faq-icon"></i></button>
+        <div class="faq-body"><div class="faq-body-inner"><p>Par téléphone au 07 62 62 72 60 ou par courriel à hello.jslpro@gmail.com. Ces coordonnées sont celles de JSL – Je Suis Là, distinctes de celles de l'Arche du Négadis.</p></div></div>
+      </div>
+    </div>
+    <p class="jsl-updated">Page mise à jour le <time datetime="2026-11-07">7 novembre 2026</time>.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="../assets/images/logo.png" alt="Logo L'Arche du Négadis" class="footer-logo">
+        <div class="footer-brand-name">L'Arche du Négadis</div>
+        <div class="footer-brand-tag">Élevage d'Excellence · Hérault</div>
+        <div class="footer-contact">
+          <div class="footer-contact-line"><i class="fa-solid fa-location-dot"></i><span>Chemin du Negadis, 34230 Paulhan</span></div>
+          <div class="footer-contact-line"><i class="fa-solid fa-phone"></i><a href="tel:+33620557867">06 20 55 78 67</a></div>
+          <div class="footer-contact-line"><i class="fa-solid fa-envelope"></i><a href="mailto:sarahespinas@gmail.com">sarahespinas@gmail.com</a></div>
+        </div>
+        <div class="footer-review"><a class="review-btn" href="https://g.page/r/CVtRxhphTr_BEAE/review" target="_blank" rel="noopener"><div class="google-logo"><svg width="20" height="20" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"/><path fill="#34A853" d="M6.3 14.7l7 5.1C15 16.1 19.2 13 24 13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2c-7.7 0-14.4 4.9-17.7 12.7z"/><path fill="#FBBC05" d="M24 46c5.6 0 10.5-1.9 14.4-5.1l-6.6-5.4C29.8 37 27 38 24 38c-6.1 0-11.3-4.1-13.1-9.6l-7 5.4C7.4 41.2 15.1 46 24 46z"/><path fill="#EA4335" d="M44.5 20H24v8.5h11.8c-.9 2.8-2.8 5.2-5.4 6.9l6.6 5.4C41.3 37.3 45 31.1 45 24c0-1.3-.2-2.7-.5-4z"/></svg></div><div><div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><div class="review-label">Laisser un avis</div><div class="review-sublabel">sur Google</div></div></a></div>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="/etalons-miniatures/" class="footer-link">Chevaux Miniatures</a></li>
+          <li><a href="/poulains/" class="footer-link">Nos Poulains</a></li>
+          <li><a href="/pension/" class="footer-link">Pension Équine</a></li>
+          <li><a href="/jsl-services-animaliers/" class="footer-link">JSL – Je Suis Là</a></li>
+          <li><a href="/gites/" class="footer-link">Gîtes de Charme</a></li>
+          <li><a href="https://braque-de-weimar-herault.fr/" class="footer-link" target="_blank" rel="noopener noreferrer">Braque de Weimar ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Certifications</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer-social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="footer-labels">
+          <span class="footer-label">AMHA</span>
+          <span class="footer-label">AMHR</span>
+          <span class="footer-label">AFCM</span>
+          <span class="footer-label">Testé ACAN</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 L'Arche du Négadis — Fait avec passion à Paulhan, Hérault</p>
+      <nav class="footer-legal"><a href="/mentions-legales/">Mentions légales</a></nav>
+    </div>
+  </div>
+<p class="fiducia-credit" style="font-size:.8rem;text-align:center;margin:14px 0;color:rgba(255,255,255,.55)">
+  Site conçu et référencé par <a href="https://fiducia-ia.com" rel="nofollow noopener" style="color:#6ea8ff;text-decoration:underline">Fiducia&nbsp;IA</a> &mdash; création de site &amp; référencement
+</p>
+</footer>
+
+<script src="../assets/script.js?v=20261012b"></script>
+</body>
+</html>

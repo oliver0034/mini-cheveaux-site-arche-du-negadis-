@@ -76,8 +76,14 @@ p{font-size:1rem;line-height:1.85}
 /* ---- Layout ---- */
 .container{max-width:1300px;margin:0 auto;padding:0 3rem}
 .container-sm{max-width:860px;margin:0 auto;padding:0 3rem}
-.section{padding:7rem 0}
-.section-sm{padding:4.5rem 0}
+/* Rythme vertical, resserré de moitié le 07/11/2026. Avant : 7rem / 4.5rem,
+   soit 224px de blanc au raccord de deux sections. Mesuré trop large sur la
+   page jsl-services-animaliers, où le saut de section et le saut entre deux
+   blocs internes faisaient la même taille à 8px près : plus aucune hiérarchie.
+   Les deux valeurs sont divisées par deux, donc tous les rapports du site sont
+   conservés. Sauvegarde avant modification dans le scratchpad de la session. */
+.section{padding:3.5rem 0}
+.section-sm{padding:2.25rem 0}
 
 /* ---- Navigation ---- */
 .site-nav{
@@ -692,7 +698,7 @@ p{font-size:1rem;line-height:1.85}
   .footer-bottom{flex-direction:column;align-items:flex-start;gap:1rem}
   .stats-row{gap:2rem;justify-content:center}
   .hero-cta{flex-direction:column;align-items:flex-start}
-  .section{padding:5rem 0}
+  .section{padding:2.5rem 0}
 }
 @media(max-width:480px){
   .gallery-grid{grid-template-columns:1fr}
@@ -909,6 +915,20 @@ body.page-exiting{
   transition:opacity 1s var(--ease),transform 1s var(--ease);
 }
 [data-reveal="left"].visible,[data-reveal="right"].visible{transform:translateX(0)}
+
+/* Mouvement réduit : la règle du hero (plus haut) ne couvrait pas les blocs
+   révélés au défilement, qui glissaient quand même de 24 à 36 px. Ajouté le
+   07/11/2026, en posant les entrées latérales de /jsl-services-animaliers/.
+   Le contenu s'affiche d'emblée, sans attendre l'observateur d'intersection. */
+@media (prefers-reduced-motion: reduce){
+  [data-reveal],
+  [data-reveal="left"],
+  [data-reveal="right"]{
+    opacity:1;
+    transform:none;
+    transition:none;
+  }
+}
 
 /* ---- Timeline : line draw (pour origine-mini-chevaux) ---- */
 .timeline-entry{
