@@ -107,7 +107,29 @@ p{font-size:1rem;line-height:1.85}
 .nav-brand-text{display:none}
 
 /* Links */
-.nav-links{display:flex;align-items:center;gap:2.25rem}
+/* Espacement des entrees du menu : 2.25rem (36 px) avant le 07/11/2026.
+   Mesure a 1440 px : la liste dispose de 1042 px et les 9 entrees en
+   demandent 776, donc 8 intervalles de 33 px au plus. A 36 px il manquait
+   22 px et trois libelles se repliaient sur deux lignes -- « Prestations JSL »,
+   « A Propos » et « Braque de Weimar ». A 28 px il reste 42 px de marge.
+   Sous 1300 px le menu complet reste trop large : defaut anterieur, non traite
+   ici, qui se corrige en basculant plus tot sur le menu burger (aujourd'hui 768 px). */
+.nav-links{display:flex;align-items:center;gap:1.75rem}
+/* Sous 1500 px, la liste n'a plus assez de place pour 9 entrees : mesure a
+   1366 px (le 1366x768 courant), elle dispose de 970 px et il en faut 1000
+   avec un intervalle de 28 px. A 20.8 px il reste 28 px de marge. */
+@media(max-width:1500px){.nav-links{gap:1.3rem}}
+/* Sous 1300 px il ne suffit plus de resserrer les intervalles : a 1280 px la
+   liste dispose de 891 px pour 778 px d'entrees, soit 14 px d'intervalle au
+   plus -- illisible. On reprend donc aussi sur les marges laterales de la
+   barre (3rem -> 1.5rem), ce qui rend 48 px : 939 px disponibles pour 919 px
+   necessaires avec 17.6 px d'intervalle. En dessous de ~1150 px le menu
+   complet ne tient plus du tout et devra basculer sur le burger, qui ne prend
+   le relais qu'a 768 px aujourd'hui. */
+@media(max-width:1300px){
+  .site-nav,.site-nav.scrolled{padding:0 1.5rem}
+  .nav-links{gap:1.1rem}
+}
 .nav-link{
   font-size:.75rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;
   color:var(--text-primary);position:relative;transition:color var(--t);
