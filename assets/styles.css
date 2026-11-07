@@ -550,9 +550,15 @@ p{font-size:1rem;line-height:1.85}
 
 /* ---- Page Hero ---- */
 .page-hero{
-  padding:12rem 0 5rem;background:var(--surface-low);
+  /* 12rem = 192 px réservés pour une barre fixe qui en mesure 201 : le fil
+     d'Ariane passait dessous de 9 px sur les 7 pages à .page-hero (mesuré le
+     07/11/2026 à 1000×545). Porté à 14rem = 224 px, soit 23 px de dégagement.
+     Sous 768 px la barre tombe à 111 px : 12rem y laissaient 81 px de vide,
+     ramenés à une valeur proportionnée. */
+  padding:14rem 0 5rem;background:var(--surface-low);
   position:relative;overflow:hidden;
 }
+@media(max-width:768px){.page-hero{padding-top:9.5rem}}
 .page-hero::before{
   content:'';position:absolute;inset:0;
   background:radial-gradient(ellipse at 70% 50%,rgba(212,175,55,.055) 0%,transparent 60%);
@@ -970,3 +976,55 @@ body.page-exiting{
 @media(min-width:900px){.nav-review{display:flex;align-items:center;margin-left:8px}}
 /* Footer col 1 review btn */
 .footer-review{margin-top:1.25rem}
+
+/* ───────────────────────────────────────────────────────────────────────────
+   HERO ET BARRE FIXE — corrigé le 07/11/2026
+
+   .site-nav est en position:fixed et mesure 201 px tant qu'on n'a pas défilé
+   (.nav-logo fait 200 px, plus 1 px de filet). Aucun hero ne réservait cette
+   hauteur : ils centrent leur contenu verticalement, donc sur une fenêtre
+   courte le centre remonte SOUS la barre.
+
+   Mesuré à 1000×545 sur /jsl-services-animaliers/ : surtitre masqué sur 50 px,
+   H1 sur 6 px. Le défaut n'était pas propre à cette page — à 1000×760,
+   /pension/ perdait déjà 5 px de surtitre. Il se voyait seulement moins.
+
+   Il existait une tentative de correction, .hero-page .hero-content avec
+   margin-top:6rem, soit 96 px pour une barre de 201 px : sous-dimensionnée de
+   moitié, et posée sur le contenu plutôt que sur le conteneur, donc à moitié
+   absorbée par le centrage. Elle est remplacée ici.
+
+   Trois pièces, chacune pour un cas distinct :
+   1. padding-top réserve la hauteur réelle de la barre (box-sizing:border-box
+      est global, le padding est donc pris dans la hauteur, pas ajouté) ;
+   2. min-height garantit que barre + contenu tiennent : le contenu le plus
+      haut mesuré est celui de /jsl-services-animaliers/, 432 px à 1000 px de
+      large — 201 + 432 laisse 67 px de respiration dans 700 ;
+   3. `safe center` : si un jour un contenu dépasse malgré tout, le centrage
+      cède et s'aligne en haut au lieu de déborder des deux côtés. Sans lui,
+      un contenu trop haut repasserait sous la barre en silence.
+   ─────────────────────────────────────────────────────────────────────────── */
+.hero,
+.hero.hero-page{
+  padding-top:201px;
+  padding-bottom:3rem;
+  align-items:safe center;
+}
+/* height:100vh et height:78vh VERROUILLAIENT la hauteur : un contenu plus haut
+   que la boîte débordait, et .hero porte overflow:hidden — il était donc coupé.
+   Mesuré le 07/11/2026 : 31 px perdus en bas à 1440×900, 8 px à 375×812.
+   On passe la hauteur en plancher : le hero garde sa proportion d'écran mais
+   peut grandir si son contenu l'exige. */
+.hero{height:auto;min-height:max(100vh,700px)}
+.hero.hero-page{height:auto;min-height:max(78vh,700px)}
+
+/* La tentative précédente, désormais portée par le conteneur. */
+.hero.hero-page .hero-content{margin-top:0}
+
+@media(max-width:768px){
+  /* Sous 768 px, .nav-logo passe à 110 px : la barre mesure 111 px. */
+  .hero,
+  .hero.hero-page{padding-top:111px}
+  .hero{min-height:max(100vh,560px)}
+  .hero.hero-page{min-height:max(78vh,560px)}
+}
