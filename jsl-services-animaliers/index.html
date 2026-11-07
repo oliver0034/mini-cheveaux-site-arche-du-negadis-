@@ -233,7 +233,19 @@
    assets/script.js découpe le H1 en spans inline-block, un par mot : chaque
    mot crée une occasion de coupure. Ni un espace insécable ni text-wrap:balance
    ne la suppriment (tous deux mesurés sans effet le 06/11/2026) : les lignes
-   du H1 sont donc découpées à la main par des <br>. ── */
+   du H1 sont donc découpées à la main par des <br>.
+
+   L'EMPHASE <em> SUR LA DEUXIÈME LIGNE N'EST PAS DÉCORATIVE — ajoutée le
+   07/11/2026. C'est elle qui porte toute l'animation visible du titre :
+   assets/styles.css lui applique un dégradé doré découpé sur le texte, une
+   boucle shimmerGold de 6 s, et un filet qui se déploie (drawLine). Sans elle,
+   le H1 n'a que la révélation mot à mot, qui passe une fois au chargement et
+   ne se remarque pas. Cette page était la SEULE des 7 pages à hero sans <em>
+   dans son H1 — d'où « il n'y a pas l'animation », signalé deux fois.
+
+   Convention du site : l'emphase couvre une LIGNE ENTIÈRE, jamais un fragment,
+   sinon le filet ne court que sous une partie de la ligne. Si le texte du H1
+   change, garder un <em> autour d'une ligne complète. ── */
 
 /* ── Encart partenaire : inversion tonale assumée ──
    Le logo JSL est noir sur fond ivoire. Plutôt que de le recolorer — ce que
