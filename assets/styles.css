@@ -114,7 +114,15 @@ p{font-size:1rem;line-height:1.85}
    « A Propos » et « Braque de Weimar ». A 28 px il reste 42 px de marge.
    Sous 1300 px le menu complet reste trop large : defaut anterieur, non traite
    ici, qui se corrige en basculant plus tot sur le menu burger (aujourd'hui 768 px). */
+/* Les entrees du menu sont centrees : en dessous de ~1250 px, les libelles longs
+   se replient sur deux ou trois lignes (« Prestations / JSL », « A / Propos »,
+   « Braque / de / Weimar »). Calees a gauche, ces lignes donnaient un bord
+   dechiquete ; centrees, le repli se lit comme un choix. Ajoute le 07/11/2026
+   a la demande d'Olivier. Le bouton deroulant est en flex, d'ou le
+   justify-content qui double le text-align. */
 .nav-links{display:flex;align-items:center;gap:1.75rem}
+.nav-links>li{text-align:center}
+.nav-drop-btn{justify-content:center}
 /* Sous 1500 px, la liste n'a plus assez de place pour 9 entrees : mesure a
    1366 px (le 1366x768 courant), elle dispose de 970 px et il en faut 1000
    avec un intervalle de 28 px. A 20.8 px il reste 28 px de marge. */
